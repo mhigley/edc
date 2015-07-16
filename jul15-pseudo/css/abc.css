@@ -1,0 +1,63 @@
+h1 {
+	width: 500px;
+	height: 500px;
+	background-color: hsla(0, 0%, 8%, 1);
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 0 75px 10px hsla(0, 0%, 0%, 1) inset;
+}
+#a, #b, #c {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: hsla(0, 0%, 92%, 1);
+	position: absolute;
+	top: calc(50% - 75px);
+}
+#a {left: calc(18% - 75px);}
+#b {left: calc(50% - 75px);}
+#c {left: calc(82% - 75px);}
+
+#a::before,
+#b::before,
+#c::before {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 35px);
+	background-color: hsla(0, 0%, 8%, 1);
+	border-radius: 50%;
+}
+#a::after,
+#b::after,
+#c::after {
+	content: "";
+	display: block;
+	position: absolute;
+}
+#a::after {
+	width: 40px;
+	height: 80px;
+	background-color: hsla(0, 0%, 92%, 1);
+	right: 0;
+	bottom: 0;
+}
+#b::after {
+	width: 40px;
+	height: 120px;
+	background-color: hsla(0, 0%, 92%, 1);
+	left: 0;
+	top: -40px;
+}
+#c::after {
+	width: 120px;
+	height: 40px;
+	background-color: hsla(0, 0%, 8%, 1);
+	top: calc(50% - 20px);
+	left: 40px;
+	border-top-left-radius: 20px 20px;
+	border-bottom-left-radius: 20px 20px;
+}
