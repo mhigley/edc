@@ -1,0 +1,144 @@
+/*
+:first-child
+:last-child
+:nth-child
+	even
+	odd
+	xn + y
+:first-of-type
+:last-of-type
+:nth-of-type
+	even
+	odd
+	xn + y
+:nth-first-of-type
+:nth-last-of-type
+:only-child
+:only-of-type
+*/
+
+nav li {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+nav > a {
+	float: left;
+}
+nav > ul {
+	background-color: hsla(0, 100%, 50%, .25);
+	float: left;
+}
+nav > ul > li > a {
+	color: purple;
+}
+
+nav::before, nav::after,
+div:nth-of-type(2)::before, div:nth-of-type(2)::after,
+div:nth-of-type(3)::before, div:nth-of-type(3)::after,
+div:nth-of-type(4)::before, div:nth-of-type(4)::after,
+footer::before, footer::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+nav ul ul li:nth-of-type(2){
+	background-color: green;
+}
+figure {
+	float: left;
+}
+figure:nth-child(odd) img {
+	transform: rotate(45deg);
+}
+figure:nth-child(3) img {
+	transform: rotate(-45deg);
+}
+figure:nth-child(even) img {
+	border-radius: 50%;
+}
+figure img {
+	box-sizing: border-box;
+	width: 200px;
+	height: 200px;
+	padding: 0;
+	border-width: 0;
+	border-style: solid;
+	border-color: grey;
+	transition: all 500ms ease-in-out;
+}
+figure:hover img {
+	padding: 10px;
+	border-width: 3px;
+	transform: rotate(360deg);
+}
+div:nth-of-type(3) img {
+	padding: 10px;
+	border: 1px solid gray;
+	margin: 10px;
+	border-radius: 5px;
+	max-width: 25%;
+}
+div:nth-of-type(3) img:nth-of-type(odd){
+	float: right;
+	clear: right;
+}
+div:nth-of-type(3) img:nth-of-type(even){
+	float: left;
+	clear: left;
+}
+form {
+	width: 50%;
+	margin: 0 auto;
+}
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+input, textarea {
+	width: 100%;
+	padding: 5px;
+	font-size: 125%;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+/*label:last-of-type{
+	background-color: red;
+}*/
+/*textarea {
+	background-image: url("http://media.giphy.com/media/glDBZld1Iv06A/giphy.gif");
+	background-position: center bottom;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-color: hsl(0, 0%, 98%);
+}*/
+
+input[type="submit"]{
+	font-size: 100%;
+	width: 150px;
+	padding: 10px;
+	background-color: hsla(200, 40%, 40%, .5);
+	border-width: 2px;
+	border-color: hsla(200, 40%, 40%, .5);
+	color: white;
+}
+
+footer p:first-child{
+	float: left;
+}
+footer p:last-child {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
