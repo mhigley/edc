@@ -1,0 +1,61 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header section {
+  padding: 0 10%;
+  background-color: #25bce9;
+}
+header section ul:first-child {
+  float: left;
+}
+header section ul:last-child {
+  float: right;
+}
+header section li {
+  display: inline-block;
+}
+header section::before, header section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header nav {
+  padding: 0 10%;
+}
+header nav > a {
+  float: left;
+}
+header nav ul {
+  float: right;
+}
+header nav li {
+  display: inline-block;
+}
+header nav::before, header nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hero {
+  padding: 0 10%;
+}
+
+section {
+  padding: 0 10%;
+}
+section.products div {
+  width: 16.66667%;
+  float: left;
+  text-align: center;
+}
+section.products img {
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid lightgray;
+}

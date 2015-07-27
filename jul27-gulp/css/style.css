@@ -1,0 +1,61 @@
+/* put your scss here */
+body {
+  background-color: #dec4c4;
+  font-family: sans-serif;
+  color: #a4cbcb;
+  font-size: 11px;
+  font-weight: 100;
+  margin: 0;
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 300;
+  margin: 0;
+}
+
+header {
+  background-color: #b88484;
+}
+header h1 {
+  float: left;
+}
+header nav {
+  float: right;
+}
+header li {
+  display: inline-block;
+}
+header::before, header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main::before, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article {
+  background-color: #f0e5e5;
+  width: 75%;
+  float: left;
+}
+article h1 {
+  color: #a66363;
+}
+
+aside {
+  background-color: #b88484;
+  width: 25%;
+  float: right;
+}
+
+footer {
+  background-color: #a66363;
+}
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "jul27-gulp",
+  "version": "1.0.0",
+  "description": "My first gulp project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/?.git"
+  },
+  "author": "Matthew Higley",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-util": "^3.0.6"
+  }
+}
