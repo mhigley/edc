@@ -1,0 +1,80 @@
+/* put your scss here */
+@import "variables";
+@import "reset";
+@import "layout";
+
+body {
+	background-color: $main-color;
+}
+h1 {
+	color: $main-color-light;
+}
+h2 {
+	color: $main-color-dark;
+}
+
+header {
+	background-image: url("http://xeon24.com/data/wallpapers/11/540083-clouds.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+	padding: $pad $halfpad $halfpad;
+	h1, h2 {
+		margin: 0;
+	}
+	h2 {
+		text-transform: uppercase;
+		font-size: 80%;
+	}
+}
+
+main {
+	border-top: 1px solid $main-color-dark;
+}
+
+aside {
+	padding: 0 $halfpad;
+}
+article {
+	padding: 0 $pad;
+}
+
+.post {
+	@extend .bubble;
+	border-bottom: 1px solid $main-color-light;
+	border-top: 1px solid $main-color-dark;
+	padding-bottom: $pad;
+	&:first-of-type {
+		border-top: none;
+	}
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
+.rightcol {
+	@extend .bubble;
+}
+
+footer {
+	background-color: $main-color-dark;
+	padding: $pad $halfpad;
+	h3 {
+		margin: 0;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

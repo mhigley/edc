@@ -1,0 +1,151 @@
+/* put your scss here */
+
+/*
+@import is for importing partial e.g.: _*.scss
+
+@extend is for inheriting from placeholder e.g.: %*{}
+
+@include is for mixins e.g.: @mixin *($x, $y, $z){}
+
+@function padding-calc($some-num, $another-num){
+	@return $some-num + $another-num;
+}
+*/
+
+
+
+
+@mixin border-mixin($width, $style, $color){
+	border: $width $style $color;
+}
+
+header h1 {
+	@include border-mixin(2px, dashed, teal);
+}
+nav ul {
+	@include border-mixin(5px, solid, green);
+}
+
+
+$color-blue: hsla(200, 50%, 60%, 1);
+$color-black: hsla(0, 0%, 8%, 1);
+$color-white: hsla(0, 0%, 92%, 1);
+$color-gray: hsla(0, 0%, 90%, 1);
+
+@import "answers"; //this is my partial
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	a {
+		color: $color-black;
+	}
+}
+a {
+	text-decoration: none;
+	color: $color-white;
+}
+h1 {
+	font-size: 24px;
+	line-height: 38px;
+	margin: 0;
+}
+
+header {
+	@extend %clearfix;
+	//@extend %background;
+	@include background-mixin(yellow, green, 10px);
+	margin-bottom: 40px;
+}
+article {
+	height: 500px;
+	// @extend %background;
+	// @include background-mixin(red, purple, 50px);
+	// margin: 20px 0;
+}
+footer {
+	@extend %background;
+	margin-top: 40px;
+}
+
+.btn {
+	&.btn-1 {
+		@include btn-basics;
+	}
+	&.btn-2 {
+		@include btn-basics;
+	}
+	&.btn-3 {
+		@include btn-basics(3px, 24px);
+	}
+	&.btn-4 {
+		@include btn-basics(4px, 28px);
+	}
+}
+
+article {
+	background: {
+		position: left top;
+		size: cover;
+		repeat: no-repeat;
+		attachment: fixed;
+	}
+}
+article:nth-of-type(1){
+	background-image: url("http://dreamatico.com/data_images/car/car-6.jpg");
+}
+article:nth-of-type(2){
+	background-image: url("http://melleum.com/data/uploads/9/291424-cars.jpg");
+}
+blockquote {
+	//@include bq-mixin(red, yellow, 5px, dashed, 10px, 50px, 16px, 10px);
+	border: {
+		color: red;
+		width: 5px;
+		style: solid;
+	}
+	font: {
+		family: Helvetica, Arial, sans-serif;
+		size: 25px;
+		weight: 100;
+		style: italic;
+		variant: small-caps;
+	}
+	background: {
+		position: left top;
+		image: url("http://images.thecarconnection.com/lrg/jaguar-c-x75-concept-car_100431735_l.jpg
+			");
+		size: cover;
+		repeat: no-repeat;
+		attachment: fixed;
+	}
+}
+
+nav {
+	a {
+		float: left;
+		color: $color-black;
+	}
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			line-height: 38px;
+		}
+	}
+}
+
+header {
+	padding: 0 10%;
+}
+footer h1 {
+	//@extend %btn-basics;
+}

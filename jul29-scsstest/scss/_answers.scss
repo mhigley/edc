@@ -1,0 +1,50 @@
+%clearfix {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+$btn-border-width: 8px !default;
+$btn-font-size: 30px !default;
+
+@mixin btn-basics($width:$btn-border-width, $size:$btn-font-size) {
+	padding: 10px 20px;
+	background-color: $color-blue;
+	border-radius: 4px;
+	border: $width solid invert(darken($color-blue, 5));
+	font-size: $size;
+}
+
+@mixin bq-mixin($bg-color, $b-color, $b-width, $b-style, $tp, $rt, $bt, $lf){
+	background-color: $bg-color;
+	border: {
+		color: $b-color;
+		width: $b-width;
+		style: $b-style;
+	}
+	padding: {
+		bottom: $bt;
+		top: $tp;
+		left: $lf;
+		right: $rt;
+	}
+}
+
+%background {
+	background-color: lighten($color-black, 85);
+	padding: 20px;
+}
+
+@mixin background-mixin($background-color, $border-color, $border-radius) {
+	background-color: transparentize($background-color, .75);
+	border: 1px solid darken($border-color, 5);
+	border-radius: $border-radius;
+}
+
+
+
+
+

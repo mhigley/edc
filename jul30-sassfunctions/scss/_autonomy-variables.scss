@@ -1,0 +1,42 @@
+$dark-brown: hsla(14, 38%, 11%, 1);
+$darkest-brown: darken($dark-brown, 3);
+$mid-brown: lighten($dark-brown, 10);
+$lite-brown: lighten($mid-brown, 30);
+$blue: invert($lite-brown);
+$black: darken(desaturate($dark-brown, 100), 20);
+$white: lighten(desaturate($lite-brown, 100), 68);
+
+%boxsizing {
+	box-sizing: border-box;
+}
+
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin colorcode($color){
+	background-color: $color;
+	@if($color == $white){
+		* {color: $black;}
+	}@else{
+		* {color: $lite-brown;}
+	}
+}
+
+@function headings($from:1, $to:6){
+	@if ($from == $to){
+		@return 'h#{$from}';
+	}@else{
+		@return 'h#{$from},' + headings($from+1, $to);
+	}
+}
+
+#{headings(1, 6)}{
+	color: $white;
+	font-weight: 600;
+	margin: 0;
+}
