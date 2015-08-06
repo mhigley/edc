@@ -1,0 +1,158 @@
+/* put your scss here */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 300%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 180%;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 150%;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+a {
+  text-decoration: underline;
+  color: #e95a3a;
+}
+
+p {
+  line-height: 2;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  border-bottom: 1px solid lightgray;
+  padding: 15px 0;
+}
+ul li::before, ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul li img {
+  float: left;
+  margin-right: 15px;
+}
+ul li:last-child {
+  border: none;
+}
+
+hr {
+  border-color: rgba(242, 242, 242, 0.1);
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+}
+
+.btn-lg {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-exmachina {
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: #f2f2f2;
+  background-color: #e95a3a;
+  transition: all 500ms ease-out;
+}
+.btn-exmachina:hover {
+  color: #f2f2f2;
+  background-color: #d83b18;
+}
+
+.hero {
+  height: 350px;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#row1 img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background-image: url("../img/img01.jpg");
+  background-repeat: repeat;
+  background-color: #212121;
+  padding: 100px 0 25px;
+}
+main hr {
+  margin: 100px 0;
+}
+main h2 {
+  margin-top: 0;
+}
+main .content {
+  padding: 0;
+}
+
+#row3 .content {
+  padding: 25px;
+  background-color: #f2f2f2;
+}
+
+#row4 h2 {
+  color: #f2f2f2;
+}
+#row4 li, #row4 p {
+  color: rgba(242, 242, 242, 0.4);
+}
+#row4 p strong {
+  color: rgba(242, 242, 242, 0.8);
+}
+#row4 blockquote {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  font-weight: 300;
+  line-height: 2;
+  padding: 30px;
+}
+#row4 blockquote cite {
+  display: block;
+  font-weight: 700;
+  font-style: normal;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  a.btn {
+    display: block;
+  }
+}
