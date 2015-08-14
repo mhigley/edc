@@ -1,0 +1,152 @@
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Neue Haas Unica Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: 200;
+  text-align: center;
+}
+
+.green {
+  background-color: #71dad2;
+}
+
+.pink {
+  background-color: #ee9c9b;
+}
+
+.yellow {
+  background-color: #fae7b2;
+}
+
+.red {
+  background-color: #f09470;
+}
+
+.orange {
+  background-color: #f6d784;
+}
+
+.purple {
+  background-color: #ea9fc3;
+}
+
+div {
+  margin: 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+div::before {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+main .ag1, main .ag3 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+main .ag2 {
+  -webkit-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+[class^='ag'] > div {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.ag2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.ag2 .ag4, .ag2 .ag5 {
+  width: calc(50% - 10px);
+}
+.ag2 .ag6 {
+  width: calc(33.3333% - 10px);
+}
+.ag2 .ag7 {
+  width: calc(66.6666% - 10px);
+}
+.ag2 .ag7 .ag8, .ag2 .ag7 .ag9 {
+  width: calc(50% - 10px);
+}
+.ag2 .ag7 .ag10 {
+  width: calc(100% - 10px);
+}
+
+.ag1::before {
+  content: "AG1";
+}
+
+.ag2::before {
+  content: "AG2";
+}
+
+.ag3::before {
+  content: "AG3";
+}
+
+.ag4::before {
+  content: "AG4";
+}
+
+.ag5::before {
+  content: "AG5";
+}
+
+.ag6::before {
+  content: "AG6";
+}
+
+.ag7::before {
+  content: "AG7";
+}
+
+.ag8::before {
+  content: "AG8";
+}
+
+.ag9::before {
+  content: "AG9";
+}
+
+.ag10::before {
+  content: "AG10";
+}

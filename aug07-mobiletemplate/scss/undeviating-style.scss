@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
+$color-white: hsla(0, 0%, 98%, 1);
+$color-black: hsla(0, 0%, 25%, 1);
+$color-blue: hsla(217, 69%, 40%, 1);
+$color-btn: hsla(201, 54%, 61%, 1);
+%boxsize {
+	& {box-sizing: border-box;}
+}
+%clearfix {
+	&::before, &::after {content: "";display: block;clear: both;}
+}
+
+body {
+	margin: 0;
+	font-family: 'Neue Haas Unica Pro', 'Questrial', sans-serif;
+	color: $color-black;
+	line-height: 1.75;
+	padding-bottom: 100px;
+}
+.container {
+	padding: 50px 5% 50px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 300%;
+}
+p {
+	color: transparentize($color-black, .4);
+}
+hr {
+	height: 1px;
+	background-color: darken($color-white, 10);
+	border: none;
+}
+a {
+	color: $color-blue;
+}
+.btn {
+	background-color: $color-btn;
+	color: $color-white;
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 30px;
+}
+.hero {
+	height: 500px;
+	background: {
+		image: url("../img/banner.jpg");
+		position: center center;
+		size: cover;
+	}
+}
+#welcome {
+	text-align: center;
+}
+#intro {
+	text-align: center;
+	@extend %clearfix;
+	div {
+		@extend %boxsize;
+		width: 33.3333%;
+		float: left;
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#intro div {
+		width: 100%;
+		padding-bottom: 50px;
+		.btn {
+			display: block;
+		}
+	}
+}
+
+
+
