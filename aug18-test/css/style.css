@@ -1,0 +1,397 @@
+/* put your scss answers here */
+ol {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+li:nth-of-type(1):hover {
+  background-image: linear-gradient(to top, #b8847a, #dbc1bd);
+}
+li:nth-of-type(1)::before {
+  content: "1";
+}
+
+li:nth-of-type(2):hover {
+  background-image: linear-gradient(to top, #b88d7a, #dbc6bd);
+}
+li:nth-of-type(2)::before {
+  content: "2";
+}
+
+li:nth-of-type(3):hover {
+  background-image: linear-gradient(to top, #b8967a, #dbcabd);
+}
+li:nth-of-type(3)::before {
+  content: "3";
+}
+
+li:nth-of-type(4):hover {
+  background-image: linear-gradient(to top, #b89f7a, #dbcfbd);
+}
+li:nth-of-type(4)::before {
+  content: "4";
+}
+
+li:nth-of-type(5):hover {
+  background-image: linear-gradient(to top, #b8a87a, #dbd4bd);
+}
+li:nth-of-type(5)::before {
+  content: "5";
+}
+
+li:nth-of-type(6):hover {
+  background-image: linear-gradient(to top, #b8b17a, #dbd8bd);
+}
+li:nth-of-type(6)::before {
+  content: "6";
+}
+
+li:nth-of-type(7):hover {
+  background-image: linear-gradient(to top, #b5b87a, #dadbbd);
+}
+li:nth-of-type(7)::before {
+  content: "7";
+}
+
+li:nth-of-type(8):hover {
+  background-image: linear-gradient(to top, #abb87a, #d5dbbd);
+}
+li:nth-of-type(8)::before {
+  content: "8";
+}
+
+li:nth-of-type(9):hover {
+  background-image: linear-gradient(to top, #a2b87a, #d1dbbd);
+}
+li:nth-of-type(9)::before {
+  content: "9";
+}
+
+li:nth-of-type(10):hover {
+  background-image: linear-gradient(to top, #99b87a, #ccdbbd);
+}
+li:nth-of-type(10)::before {
+  content: "10";
+}
+
+li:nth-of-type(11):hover {
+  background-image: linear-gradient(to top, #90b87a, #c7dbbd);
+}
+li:nth-of-type(11)::before {
+  content: "11";
+}
+
+li:nth-of-type(12):hover {
+  background-image: linear-gradient(to top, #87b87a, #c3dbbd);
+}
+li:nth-of-type(12)::before {
+  content: "12";
+}
+
+li:nth-of-type(13):hover {
+  background-image: linear-gradient(to top, #7db87a, #bedbbd);
+}
+li:nth-of-type(13)::before {
+  content: "13";
+}
+
+li:nth-of-type(14):hover {
+  background-image: linear-gradient(to top, #7ab881, #bddbc0);
+}
+li:nth-of-type(14)::before {
+  content: "14";
+}
+
+li:nth-of-type(15):hover {
+  background-image: linear-gradient(to top, #7ab88a, #bddbc4);
+}
+li:nth-of-type(15)::before {
+  content: "15";
+}
+
+li:nth-of-type(16):hover {
+  background-image: linear-gradient(to top, #7ab893, #bddbc9);
+}
+li:nth-of-type(16)::before {
+  content: "16";
+}
+
+li:nth-of-type(17):hover {
+  background-image: linear-gradient(to top, #7ab89c, #bddbce);
+}
+li:nth-of-type(17)::before {
+  content: "17";
+}
+
+li:nth-of-type(18):hover {
+  background-image: linear-gradient(to top, #7ab8a5, #bddbd2);
+}
+li:nth-of-type(18)::before {
+  content: "18";
+}
+
+li:nth-of-type(19):hover {
+  background-image: linear-gradient(to top, #7ab8ae, #bddbd7);
+}
+li:nth-of-type(19)::before {
+  content: "19";
+}
+
+li:nth-of-type(20):hover {
+  background-image: linear-gradient(to top, #7ab8b8, #bddbdb);
+}
+li:nth-of-type(20)::before {
+  content: "20";
+}
+
+li:nth-of-type(21):hover {
+  background-image: linear-gradient(to top, #7aaeb8, #bdd7db);
+}
+li:nth-of-type(21)::before {
+  content: "21";
+}
+
+li:nth-of-type(22):hover {
+  background-image: linear-gradient(to top, #7aa5b8, #bdd2db);
+}
+li:nth-of-type(22)::before {
+  content: "22";
+}
+
+li:nth-of-type(23):hover {
+  background-image: linear-gradient(to top, #7a9cb8, #bdcedb);
+}
+li:nth-of-type(23)::before {
+  content: "23";
+}
+
+li:nth-of-type(24):hover {
+  background-image: linear-gradient(to top, #7a93b8, #bdc9db);
+}
+li:nth-of-type(24)::before {
+  content: "24";
+}
+
+li:nth-of-type(25):hover {
+  background-image: linear-gradient(to top, #7a8ab8, #bdc4db);
+}
+li:nth-of-type(25)::before {
+  content: "25";
+}
+
+li:nth-of-type(26):hover {
+  background-image: linear-gradient(to top, #7a81b8, #bdc0db);
+}
+li:nth-of-type(26)::before {
+  content: "26";
+}
+
+li:nth-of-type(27):hover {
+  background-image: linear-gradient(to top, #7d7ab8, #bebddb);
+}
+li:nth-of-type(27)::before {
+  content: "27";
+}
+
+li:nth-of-type(28):hover {
+  background-image: linear-gradient(to top, #877ab8, #c3bddb);
+}
+li:nth-of-type(28)::before {
+  content: "28";
+}
+
+li:nth-of-type(29):hover {
+  background-image: linear-gradient(to top, #907ab8, #c7bddb);
+}
+li:nth-of-type(29)::before {
+  content: "29";
+}
+
+li:nth-of-type(30):hover {
+  background-image: linear-gradient(to top, #997ab8, #ccbddb);
+}
+li:nth-of-type(30)::before {
+  content: "30";
+}
+
+li:nth-of-type(31):hover {
+  background-image: linear-gradient(to top, #a27ab8, #d1bddb);
+}
+li:nth-of-type(31)::before {
+  content: "31";
+}
+
+li:nth-of-type(32):hover {
+  background-image: linear-gradient(to top, #ab7ab8, #d5bddb);
+}
+li:nth-of-type(32)::before {
+  content: "32";
+}
+
+li:nth-of-type(33):hover {
+  background-image: linear-gradient(to top, #b57ab8, #dabddb);
+}
+li:nth-of-type(33)::before {
+  content: "33";
+}
+
+li:nth-of-type(34):hover {
+  background-image: linear-gradient(to top, #b87ab1, #dbbdd8);
+}
+li:nth-of-type(34)::before {
+  content: "34";
+}
+
+li:nth-of-type(35):hover {
+  background-image: linear-gradient(to top, #b87aa8, #dbbdd4);
+}
+li:nth-of-type(35)::before {
+  content: "35";
+}
+
+li:nth-of-type(36):hover {
+  background-image: linear-gradient(to top, #b87a9f, #dbbdcf);
+}
+li:nth-of-type(36)::before {
+  content: "36";
+}
+
+li:nth-of-type(37):hover {
+  background-image: linear-gradient(to top, #b87a96, #dbbdca);
+}
+li:nth-of-type(37)::before {
+  content: "37";
+}
+
+li:nth-of-type(38):hover {
+  background-image: linear-gradient(to top, #b87a8d, #dbbdc6);
+}
+li:nth-of-type(38)::before {
+  content: "38";
+}
+
+li:nth-of-type(39):hover {
+  background-image: linear-gradient(to top, #b87a84, #dbbdc1);
+}
+li:nth-of-type(39)::before {
+  content: "39";
+}
+
+li:nth-of-type(40):hover {
+  background-image: linear-gradient(to top, #b87a7a, #dbbdbd);
+}
+li:nth-of-type(40)::before {
+  content: "40";
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 20px;
+  background-color: #c2f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 80%;
+  color: #7a1f4d;
+  text-transform: uppercase;
+}
+
+a {
+  display: block;
+  padding: 5px 15px;
+  background-color: #1f7a4d;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #145233;
+  border-radius: 5px;
+  color: #ebebeb;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  font-size: 80%;
+  -ms-flex-item-align: center;
+      -webkit-align-self: center;
+          align-self: center;
+  margin-top: auto;
+}
+
+h1 + p {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+small {
+  color: rgba(20, 20, 20, 0.5);
+  margin-bottom: 20px;
+}
+
+ol {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #141414, #3b3b3b);
+}
+
+li {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #dedede, whitesmoke);
+}
+li h1 {
+  font-size: 125%;
+  margin-top: 30px;
+  text-align: left;
+}
+li h1:first-letter {
+  text-transform: uppercase;
+}
+li::before {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(20, 20, 20, 0.25);
+  position: absolute;
+  left: -6px;
+  top: -12px;
+  font-size: 200%;
+  color: white;
+  font-weight: 100;
+}

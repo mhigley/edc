@@ -1,0 +1,15 @@
+$red: hsla(0, 75%, 65%, 1);
+$orange: hsla(40, 80%, 55%, 1);
+$yellow: hsla(60, 90%, 70%, 1);
+$green: hsla(105, 70%, 65%, 1);
+$blue: hsla(200, 70%, 65%, 1);
+$purple: hsla(280, 70%, 65%, 1);
+
+$color-rainbow: $red $orange $yellow $green $blue $purple;
+@each $current-color in $color-rainbow {
+	$i: index($color-rainbow, $current-color);
+	li:nth-of-type(#{$i}) {
+		background-image: none;
+		background-color: $current-color;
+	}
+}

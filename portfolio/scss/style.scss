@@ -233,6 +233,7 @@ section {
 }
 
 /* Start resumé page styles */
+/*
 .resume h3 {
 	font-size: 175%;
 	line-height: 1.25;
@@ -304,7 +305,9 @@ section {
 	justify-content: center;
 	align-items: center;
 }
+*/
 
+/*
 @media print {
 	nav, #footer, #resume-header div:first-of-type {
 		display: none;
@@ -327,8 +330,9 @@ section {
 		filter: none;
 	}
 }
+*/
 
-#nav {display: none;}
+/*
 @media screen and (max-width: 767px){
 	#nav {
 		background-color: hsla(200, 30%, 60%, .25);
@@ -397,6 +401,7 @@ section {
 		}
 	}
 }
+*/
 
 
 
