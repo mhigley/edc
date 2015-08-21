@@ -1,0 +1,6 @@
+/* put your scss here */
+@for $i from 1 through 6 {
+	div:nth-of-type(#{$i})::before {
+		content: "what the what";
+	}
+}

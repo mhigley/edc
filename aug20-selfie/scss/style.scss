@@ -1,0 +1,53 @@
+/* put your scss here */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+div, span {
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+
+div::before {
+	font-family: 'FontAwesome';
+	content: $fa-var-flag;
+}
+$hue: random(360);
+$sat: random(100);
+$lum: random(100);
+$random: hsl($hue, 50%, 50%);
+$new-color: invert($random);
+
+span {
+	background-color: $random;
+	transform: rotate(#{$hue}deg);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	color: $new-color;
+	&::after{
+		content: '#{$hue}deg';
+	}
+}
+
+$hue: (360 / 6);
+@for $i from 1 through 10 {
+	$newhue: $hue * $i;
+	div:nth-of-type(#{$i}){
+		background-color: hsla($newhue, 50%, 50%, 1);
+		
+	}
+}
+
+$class-names: Gloria Matt Vinson Tom Eric Belia Sam Rachael Eligah Julian;
+@each $class-name in $class-names {
+	$i: index($class-names, $class-name);
+	div##{$class_name}::before{
+		content: "#{$i}";
+	}
+}
+
+
+

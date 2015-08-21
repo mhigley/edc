@@ -24,7 +24,7 @@ gulp.task('compass', function(){
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: true	
-		}).on('error', gutil.log))
+		}))
 		.pipe(gulp.dest('css/'))
 		.pipe(connect.reload());
 });

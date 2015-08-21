@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+}
+
+button {
+  display: block;
+  margin: 10px;
+  padding: 10px 30px;
+  color: #cf6ebb;
+  background-color: #faf0f8;
+  border: 1px solid #db94cd;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  color: #cb62b6;
+  background-color: #f6e4f3;
+  border-color: #d788c8;
+}
+
+div#bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+div.img-1 {
+  background-image: url("../got/house-stark.jpg");
+}
+
+div.img-2 {
+  background-image: url("../got/house-targaryen.jpg");
+}
+
+div.img-3 {
+  background-image: url("../got/house-arryn.jpg");
+}
+
+div.img-4 {
+  background-image: url("../got/house-baratheon.jpg");
+}
+
+div.img-5 {
+  background-image: url("../got/house-lannister.jpg");
+}
+
+div.img-6 {
+  background-image: url("../got/house-martell.jpg");
+}
+
+div.img-7 {
+  background-image: url("../got/house-tully.jpg");
+}
+
+div.img-8 {
+  background-image: url("../got/house-tyrell.jpg");
+}
