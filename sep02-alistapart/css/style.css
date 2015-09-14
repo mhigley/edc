@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+}
+section {
+	width: 50%;
+	margin: 50px auto;
+	padding: 50px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	background-color: lightgray;
+}
+figure {
+	margin: 0;
+}
+figure img {
+	width: calc(100% - 20px);
+	height: auto;
+	border: 1px solid darkgray;
+	background-color: white;
+	padding: 10px;
+}
