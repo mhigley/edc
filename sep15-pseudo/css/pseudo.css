@@ -1,0 +1,104 @@
+html {
+	background-image: linear-gradient(to top, #e0e0e0, #fefefe);
+	height: 100%;
+	position: relative;
+}
+
+html::after {
+	content: "Copyright 2015 Geekwise Academy. All rights reserved.";
+	line-height: 50px;
+	font-size: 12px;
+	font-family: "Helvetica Neue";
+	padding: 0 50px;
+	color: hsla(0, 0%, 100%, .45);
+	float: left;
+	background-color: #0f0f0f;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+head {
+	width: 100%;
+	height: 50px;
+	background-color: hsla(0, 30%, 30%, 1);
+	display: block;
+}
+head::before {
+	content: "Pseudo Elements";
+	line-height: 50px;
+	font-size: 24px;
+	font-family: "Helvetica Neue";
+	padding: 0 50px;
+	color: white;
+	float: left;
+}
+head::after {
+	content: "::before ::after";
+	line-height: 50px;
+	font-size: 18px;
+	font-family: "Helvetica Neue";
+	padding: 0 50px;
+	color: white;
+	float: right;
+}
+meta {
+	background-color: hsla(0, 30%, 20%, 1);
+	display: block;
+	width: 100%;
+	height: 2px;
+}
+link {
+	background-color: hsla(0, 30%, 40%, 1);
+	display: block;
+	width: 100%;
+	height: 2px;
+}
+body {
+	box-sizing: border-box;
+	box-shadow: 0 0 0 110px hsla(0, 0%, 20%, 1) inset,
+				0 0 0 114px hsla(0, 0%, 23%, 1) inset;
+	border: 3px solid hsla(0, 0%, 12%, 1);
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin: 100px auto;
+	position: relative;
+	background-image: linear-gradient(to top, #171717, #303030);
+}
+body::before {
+	content: "";
+    display: block;
+    width: 35%;
+    height: 5%;
+    border: 4px solid hsl(0, 0%, 92%);
+    border-left-color: hsla(0, 0%, 23%, 1);
+    background-color: hsl(0, 0%, 85%);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    top: 223px;
+    left: 92px;
+    transform: rotate(90deg);
+    z-index: 110;
+}
+body::after {
+	content: "";
+	display: block;
+	width: 25%;
+	height: 5%;
+	border: 4px solid hsla(0, 0%, 92%, 1);
+	border-left-color: hsla(0, 0%, 23%, 1);
+	background-color: hsla(0, 0%, 85%, 1);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	position: absolute;
+	top: 136px;
+    left: 179px;
+    transform: rotate(0deg);
+    /*transform-origin: 0 5px;*/
+	z-index: 100;
+}
