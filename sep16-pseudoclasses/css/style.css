@@ -1,0 +1,96 @@
+body {
+	font-family: sans-serif;
+	
+}
+ul {
+	width: 25vw;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: hsla(0, 0%, 19%, 1);
+	color: hsla(0, 0%, 92%, 1);
+	transition: all 200ms ease-in-out;
+	margin: 0 auto;
+}
+ul:hover {
+	box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, .50);
+}
+li {
+	box-sizing: border-box;
+	padding: 1px;
+	transition: all 200ms ease-in-out;
+	border-bottom: 1px solid hsla(0, 0%, 9%, 1);
+}
+li:last-of-type {
+	border:none;
+}
+
+li:nth-child(1) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/P.t.altaica_Tomak_Male.jpg/440px-P.t.altaica_Tomak_Male.jpg");
+	background-position: 25% center;
+}
+li:nth-child(2) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Standardchinchilla.jpg/500px-Standardchinchilla.jpg");
+	background-position: 65% center;
+}
+li:nth-child(3) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Black-Tailed_Prairie_Dog.jpg/450px-Black-Tailed_Prairie_Dog.jpg");
+	background-position: center 80%;
+}
+li:nth-child(4) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Plains_Zebra_Equus_quagga.jpg/440px-Plains_Zebra_Equus_quagga.jpg");
+	background-position: center 75%;
+}
+li:nth-child(5) figure {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kangaroo_and_joey03.jpg/440px-Kangaroo_and_joey03.jpg");
+	background-position: center 35%;
+}
+
+li figure {
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+li:hover {
+	background-color: hsla(310, 70%, 60%, 1);
+	transform: scale(1.05, 1.05, .5);
+}
+li:hover div {
+	height: 25vw;
+}
+li div {
+	width: 100%;
+	height: 0vw;
+	background-color: hsla(0, 0%, 92%, 1);
+	position: relative;
+	overflow: hidden;
+	transition: height 500ms ease-in-out;
+}
+figure {
+	margin: 0;
+	height: 100%;
+}
+figcaption {
+	color: hsla(0, 0%, 19%, 1);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	font-style: italic;
+	background-color: hsla(0, 0%, 100%, .75);
+}
+a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	padding: 20px;
+}
+i {
+	margin-right: 10px;
+	float: left;
+}
