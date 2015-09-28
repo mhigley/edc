@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+	color: hsla(0, 0%, 40%, 1);
+	margin-top: 0;
+	font-weight: 100;
+	text-align: center;
+}
+p {
+	font-weight: 300;
+}
+a.btn {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-color: hsla(0, 0%, 100%, 1);
+	padding: 20px 30px;
+	border-radius: 5px;
+	background-color: hsla(0, 0%, 100%, .20);
+}
+header {
+	background-image: url("../img/overlay.png"), url("../img/header.jpg");
+	background-size: initial, cover;
+	background-position: center top;
+	padding: 150px 0;
+	color: hsla(0, 0%, 100%, 1);
+}
+header h1, header h2 {
+	color: inherit;
+}
+header h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+header h2 {
+	font-size: 1.4em;
+	margin: 1.2em 0;
+}
+header a {
+	width: 250px;
+	margin: 0 auto;
+}
