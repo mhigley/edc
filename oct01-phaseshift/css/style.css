@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,700,800);
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  display: block;
+  padding: 10px 0;
+  background-color: #d84680;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+#blogs ul::before, #blogs ul::after,
+#blogs2 ul::before,
+#blogs2 ul::after,
+#blogs3 ul::before,
+#blogs3 ul::after,
+#blogs4 ul::before,
+#blogs4 ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#blogs li,
+#blogs2 li,
+#blogs3 li,
+#blogs4 li {
+  background-color: white;
+  margin-bottom: 40px;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#blogs li:nth-of-type(3n),
+#blogs2 li:nth-of-type(3n),
+#blogs3 li:nth-of-type(3n),
+#blogs4 li:nth-of-type(3n) {
+  margin-right: 0;
+}
+#blogs img,
+#blogs2 img,
+#blogs3 img,
+#blogs4 img {
+  width: 100%;
+  height: auto;
+}
+#blogs div,
+#blogs2 div,
+#blogs3 div,
+#blogs4 div {
+  padding: 20px 40px 40px;
+}
