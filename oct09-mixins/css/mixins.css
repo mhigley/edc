@@ -1,0 +1,19 @@
+/* sass goes here */
+body {
+  font-size: 25px;
+  background-color: black;
+  color: pink;
+}
+
+/*
+Directives:
+@mixin - advanced placeholders (accepts arguments)
+@media - media queries
+@include - @mixin
+@import - importing css stylesheet
+@extend - % placeholders
+@debug
+
+@warn
+@error
+*/

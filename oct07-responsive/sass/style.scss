@@ -4,7 +4,7 @@
 
 $darkgray: hsla(222, 10%, 33%, 1);
 $midgray: lighten($darkgray, 10);
-$litegray: lighten($darkgray, 50);
+$litegray: lighten($darkgray, 62);
 $keycolor: hsla(161, 100%, 35%, 1);
 $darkblue: hsla(209, 53%, 52%, 1);
 $liteblue: lighten($darkblue, 10);
@@ -41,6 +41,10 @@ h3 {
 	display: inline-block;
 	margin-left: 10px;
 }
+img {
+	width: 100%;
+	height: auto;
+}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -67,6 +71,31 @@ header span, header span::before, header span::after,
 	text-rendering:auto;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
+}
+
+nav {
+	color: $black;
+	background-color: $white;
+	margin-bottom: 100px;
+	@extend %clearfix;
+	h1 {
+		float: left;
+		line-height: 2em;
+	}
+	ul {
+		float: right;
+	}
+	li {
+		display: inline-block;
+		line-height: 3em;
+		a {
+			color: transparentize($white, .5);
+			transition: color 200ms ease-in-out;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
 }
 
 /* HEADER styles start */
@@ -367,6 +396,36 @@ footer {
 	}
 }
 /* FOOTER styles end */
+
+body {
+	background-color: $litegray;
+}
+
+main {
+	@extend %clearfix;
+	margin: 100px 50px;
+	background-color: $white;
+}
+
+/* SIDEBAR styles start */
+#sidebar {
+	width: 33.3333%;
+	&.sidebar-left {
+		float: left;
+	}
+	&.sidebar-right {
+		float: right;
+	}
+}
+/* SIDEBAR styles end */
+
+
+/* MAINBAR styles start */
+#mainbar {
+	width: 66.6666%;
+	float: left;
+}
+/* MAINBAR styles end */
 
 
 

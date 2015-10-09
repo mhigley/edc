@@ -1,7 +1,7 @@
 /* sass goes here */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-header nav::before, header #cta::before, #silos ul::before, #testimonials div::before, #features::before, header nav::after, header #cta::after, #silos ul::after, #testimonials div::after, #features::after {
+nav::before, header #cta::before, #silos ul::before, #testimonials div::before, #features::before, main::before, nav::after, header #cta::after, #silos ul::after, #testimonials div::after, #features::after, main::after {
   content: '';
   display: block;
   clear: both;
@@ -34,6 +34,11 @@ h3 {
   margin-left: 10px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -61,6 +66,30 @@ header span, header span::before, header span::after,
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  color: #3c414e;
+  background-color: white;
+  margin-bottom: 100px;
+}
+nav h1 {
+  float: left;
+  line-height: 2em;
+}
+nav ul {
+  float: right;
+}
+nav li {
+  display: inline-block;
+  line-height: 3em;
+}
+nav li a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 200ms ease-in-out;
+}
+nav li a:hover {
+  color: white;
 }
 
 /* HEADER styles start */
@@ -117,7 +146,7 @@ header #browser {
 header #browser div {
   width: 100%;
   height: 5vw;
-  background-color: #cfd2d8;
+  background-color: #f1f2f4;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -277,7 +306,7 @@ header #browser div span:nth-child(4)::after {
 /* FEATURES styles end */
 /* PRICES styles start */
 #prices {
-  background-color: #cfd2d8;
+  background-color: #f1f2f4;
   padding: 75px 0;
   text-align: center;
 }
@@ -293,7 +322,7 @@ header #browser div span:nth-child(4)::after {
 }
 #prices li {
   padding: 20px 0;
-  border-bottom: 1px solid #cfd2d8;
+  border-bottom: 1px solid #f1f2f4;
 }
 #prices li.sol {
   color: rgba(60, 65, 78, 0.5);
@@ -333,3 +362,31 @@ footer > p {
   }
 }
 /* FOOTER styles end */
+body {
+  background-color: #f1f2f4;
+}
+
+main {
+  margin: 100px 50px;
+  background-color: white;
+}
+
+/* SIDEBAR styles start */
+#sidebar {
+  width: 33.3333%;
+}
+#sidebar.sidebar-left {
+  float: left;
+}
+#sidebar.sidebar-right {
+  float: right;
+}
+
+/* SIDEBAR styles end */
+/* MAINBAR styles start */
+#mainbar {
+  width: 66.6666%;
+  float: left;
+}
+
+/* MAINBAR styles end */
