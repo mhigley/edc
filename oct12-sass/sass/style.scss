@@ -1,0 +1,217 @@
+/* sass goes here */
+@import "reset";
+
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+%content {
+	padding: 50px 5vw;
+}
+
+
+.btn {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	transition: background-color 200ms ease-in-out;
+	&:hover {
+		background-color: hsla(0, 0%, 0%, .1);
+	}
+}
+.icon {
+	$ico: 3vw;
+	$icohalf: ($ico / 2);
+	$icothird: ($ico / 3);
+	$icocolor: hsla(0, 0%, 0%, .10);
+	background-color: $icocolor;
+	display: inline-block;
+	width: $ico;
+	height: $icohalf;
+	line-height: $icohalf;
+	text-align: center;
+	position: relative;
+	margin-bottom: $ico;
+	&::before {
+		content: '';
+		display: block;
+		border: {
+			color: transparent transparent $icocolor transparent;
+			width: $icohalf $icohalf $icothird $icohalf;
+			style: solid;
+		}
+		position: absolute;
+		bottom: 100%;
+	}
+	&::after {
+		content: '';
+		display: block;
+		border: {
+			color: $icocolor transparent transparent transparent;
+			width: $icothird $icohalf $icohalf $icohalf;
+			style: solid;
+		}
+		position: absolute;
+		top: 100%;
+	}
+}
+
+
+
+header {
+	@extend %content;
+	color: white;
+	a {
+		border: none;
+	}
+	overflow: hidden;
+	background: {
+		image: linear-gradient(hsla(0, 0%, 0%, .3), hsla(0, 0%, 0%, .3)), url('../img/slide01.jpg');
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+	}
+}
+nav {
+	@extend %clearfix;
+	h1 {
+		float: left;
+	}
+	ul {
+		float: right;
+	}
+	li {
+		display: inline-block;
+	}
+}
+h2 {
+	text-align: center;
+	margin-top: 15vw;
+	margin-bottom: 15vw;
+	font-size: 3vw;
+	text-transform: uppercase;
+}
+
+#about {
+	@extend %content;
+	@extend %clearfix;
+	div {
+		width: 33%;
+		margin-right: 7%;
+		float: left;
+	}
+	img {
+		width: 60%;
+		height: auto;
+		float: right;
+	}
+}
+
+#promos {
+	@extend %clearfix;
+	div {
+		box-sizing: border-box;
+		width: 33.3333%;
+		float: left;
+		@extend %content;
+	}
+}
+
+#blog {
+	@extend %content;
+	background-color: hsla(0, 0%, 0%, .10);
+	.grid {
+		@extend %clearfix;
+		div {
+			background-color: white;
+			float: left;
+			width: 30%;
+			margin-right: 5%;
+			margin-bottom: 5%;
+			&:nth-of-type(3n){
+				margin-right: 0;
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+			border-bottom: 20px solid hsla(0, 0%, 0%, .10);
+		}
+		span {
+			display: inline-block;
+			padding: 2.5vw;
+		}
+	}
+}
+
+#contact {
+	& > div {
+		box-sizing: border-box;
+		width: 50%;
+		float: left;
+		@extend %content;
+	}
+	fieldset {
+		border: none;
+		padding: 0;
+		&:first-child {
+			label {
+				width: 50%;
+			}
+		}
+		input,
+		textarea {
+			width: 100%;
+		}
+	}
+	label {
+		width: 100%;
+		display: block;
+		float: left;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+p {
+	background-color: pink;
+	display: inline-block;
+	width: 3vw;
+	height: 1.5vw;
+	line-height: 1.5vw;
+	text-align: center;
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		border-color: transparent transparent pink transparent;
+		border-width: 1.5vw 1.5vw 1vw 1.5vw;
+		border-style: solid;
+		position: absolute;
+		bottom: 100%;
+	}
+	&::after {
+		content: '';
+		display: block;
+		border-color: pink transparent transparent transparent;
+		border-width: 1vw 1.5vw 1.5vw 1.5vw;
+		border-style: solid;
+		position: absolute;
+		top: 100%;
+	}
+}
+*/
