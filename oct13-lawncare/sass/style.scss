@@ -1,0 +1,205 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+
+/* sass goes here */
+
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+
+.floats {
+	.utilnav {
+		@extend %clearfix;
+		background-image: url('../img/patt1.png');
+		h1 {
+			float: left;
+			color: $logo-color;
+			margin-bottom: 0;
+		}
+		ul {
+			float: right;
+		}
+		li {
+			display: inline-block;
+			float: left;
+			i {
+				float: left;
+				margin: 0 10px;
+				font-size: 2em;
+				color: $comp-color;
+			}
+			div {
+				float: left;
+			}
+		}
+	}
+	nav {
+		background-color: $black;
+		color: $white;
+		li {
+			display: inline-block;
+			font-size: 1.1em;
+			font-weight: 100;
+			
+			text-transform: uppercase;
+			&:hover {
+				background-color: $key-color;
+			}
+			a {
+				display: block;
+				padding: 25px 30px;
+			}
+		}
+	}
+	.cta {
+		text-align: center;
+		padding: 100px 0;
+		color: $white;
+		background: {
+			image: url('../img/page-1_slide1.jpg');
+			size: cover;
+			position: center;
+		}
+		h2 {
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+	}
+	&.promos {
+		padding: 75px 5vw;
+		@extend %clearfix;
+		div {
+			width: 25%;
+			float: left;
+		}
+	}
+
+	&.features {
+		padding: 75px 5vw;
+		text-align: center;
+		@extend %clearfix;
+		div {
+			width: 33%;
+			float: left;
+		}
+		i {
+			font-size: 3em;
+			width: 3em;
+			height: 3em;
+			line-height: 3em;
+			border: 1px solid $comp-color;
+			border-radius: 50%;
+			color: $comp-color;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.flex {
+	.utilnav {
+		display: flex;
+		h1 {
+			margin-right: auto;
+			color: $logo-color;
+			margin-bottom: 0;
+		}
+		ul {
+			display: flex;
+		}
+		li {
+			display: inline-flex;
+			i {
+				margin: 0 10px;
+				font-size: 2em;
+				color: $comp-color;
+			}
+		}
+	}
+	nav {
+		background-color: $black;
+		color: $white;
+		ul {
+			width: 100%;
+			display: inline-flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			li {
+				text-align: center;
+				font-size: 1.1em;
+				font-weight: 100;
+				
+				text-transform: uppercase;
+				&:hover {
+					background-color: $key-color;
+				}
+				a {
+					display: block;
+					padding: 25px 30px;
+				}
+			}
+		}
+	}
+	.cta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 25vw;
+		color: $white;
+		background: {
+			image: url('../img/page-1_slide1.jpg');
+			size: cover;
+			position: center;
+		}
+		h2 {
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+	}
+	&.promos {
+		padding: 75px 0;
+		display: flex;
+		justify-content: center;
+		div {
+			width: 20%;
+		}
+	}
+
+	&.features {
+		padding: 75px 0;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		div {
+			width: 30%;
+		}
+		i {
+			font-size: 3em;
+			width: 3em;
+			height: 3em;
+			line-height: 3em;
+			border: 1px solid $comp-color;
+			border-radius: 50%;
+			color: $comp-color;
+			margin-bottom: 40px;
+			//display: inline-flex;
+			//justify-content: center;
+			//align-items: center;
+		}
+	}
+}
+
+
+
+
+
+
+
+
