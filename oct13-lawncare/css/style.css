@@ -2571,7 +2571,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* sass goes here */
-.floats .utilnav::before, .floats.promos::before, .floats.features::before, .floats .utilnav::after, .floats.promos::after, .floats.features::after {
+.floats .utilnav::before, .floats.promos::before, .floats.features::before, .floats.about::before, .floats.do::before, .floats.product::before, .floats.news::before, .floats.hovers::before, .floats .utilnav::after, .floats.promos::after, .floats.features::after, .floats.about::after, .floats.do::after, .floats.product::after, .floats.news::after, .floats.hovers::after {
   content: '';
   display: block;
   clear: both;
@@ -2632,6 +2632,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .floats.promos {
   padding: 75px 5vw;
+  background-color: #f0f0f0;
 }
 .floats.promos div {
   width: 25%;
@@ -2655,6 +2656,134 @@ h1, h2, h3, h4, h5, h6, p {
   color: #00b0f0;
   margin-bottom: 40px;
 }
+.floats.about {
+  padding: 75px 5vw;
+}
+.floats.about div:first-child {
+  width: 33%;
+  float: left;
+}
+.floats.about div:last-child {
+  width: 66%;
+  float: left;
+}
+.floats.fixed1 {
+  padding: 150px 0;
+  background-image: url("../img/parallax1-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.floats.fixed1 h1 {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+.floats.do {
+  padding: 75px 5vw;
+}
+.floats.do h1 {
+  color: #f7951d;
+  font-size: 4em;
+  text-align: center;
+}
+.floats.do div {
+  box-sizing: border-box;
+  width: 33%;
+  float: left;
+  padding: 5%;
+}
+.floats.do img {
+  width: 100%;
+  height: auto;
+}
+.floats.product {
+  padding: 75px 5vw;
+  background-color: #f0f0f0;
+}
+.floats.product h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.floats.product img {
+  width: 100%;
+  height: auto;
+}
+.floats.product div:first-child {
+  width: 33%;
+  float: left;
+}
+.floats.product div:last-child {
+  width: 66%;
+  float: left;
+}
+.floats.fixed2 {
+  padding: 150px 0;
+  background-image: url("../img/parallax1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.floats.fixed2 h1 {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+.floats.news {
+  padding: 75px 5vw;
+}
+.floats.news h1 {
+  color: #f7951d;
+  font-size: 4em;
+  text-align: center;
+}
+.floats.news div {
+  box-sizing: border-box;
+  width: 33%;
+  float: left;
+  padding: 5%;
+}
+.floats.news img {
+  width: 100%;
+  height: auto;
+}
+.floats.hovers div {
+  width: 14.28571%;
+  height: 14.28571vw;
+  float: left;
+  background-size: 130%;
+  background-position: center;
+  overflow: hidden;
+  transition: background-size 200ms ease-in-out;
+}
+.floats.hovers div:hover {
+  background-size: 150%;
+}
+.floats.hovers div:nth-child(1) {
+  background-image: url("../img/page-1_img8.jpg");
+}
+.floats.hovers div:nth-child(2) {
+  background-image: url("../img/page-1_img9.jpg");
+}
+.floats.hovers div:nth-child(3) {
+  background-image: url("../img/page-1_img10.jpg");
+}
+.floats.hovers div:nth-child(4) {
+  background-image: url("../img/page-1_img11.jpg");
+}
+.floats.hovers div:nth-child(5) {
+  background-image: url("../img/page-1_img12.jpg");
+}
+.floats.hovers div:nth-child(6) {
+  background-image: url("../img/page-1_img8.jpg");
+}
+.floats.hovers div:nth-child(7) {
+  background-image: url("../img/page-1_img9.jpg");
+}
 
 .flex .utilnav {
   display: -webkit-flex;
@@ -2663,7 +2792,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .flex .utilnav h1 {
   margin-right: auto;
-  color: #f26321;
+  color: green;
   margin-bottom: 0;
 }
 .flex .utilnav ul {
@@ -2735,6 +2864,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .flex.promos {
   padding: 75px 0;
+  background-color: #f0f0f0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2767,4 +2897,152 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 50%;
   color: #00b0f0;
   margin-bottom: 40px;
+}
+.flex.about {
+  padding: 75px 5vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex.about div:first-child {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.flex.about div:last-child {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.flex.fixed1 {
+  padding: 150px 0;
+  background-image: url("../img/parallax1-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.flex.fixed1 h1 {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+.flex.do {
+  padding: 75px 5vw;
+}
+.flex.do h1 {
+  color: #f7951d;
+  font-size: 4em;
+  text-align: center;
+}
+.flex.do span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex.do div {
+  padding: 5%;
+}
+.flex.do img {
+  width: 100%;
+  height: auto;
+}
+.flex.product {
+  padding: 75px 5vw;
+  background-color: #f0f0f0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex.product h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.flex.product img {
+  width: 100%;
+  height: auto;
+}
+.flex.product div:first-child {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.flex.product div:last-child {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.flex.fixed2 {
+  padding: 150px 0;
+  background-image: url("../img/parallax1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.flex.fixed2 h1 {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+.flex.news {
+  padding: 75px 5vw;
+}
+.flex.news h1 {
+  color: #f7951d;
+  font-size: 4em;
+  text-align: center;
+}
+.flex.news span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex.news div {
+  padding: 5%;
+}
+.flex.news img {
+  width: 100%;
+  height: auto;
+}
+.flex.hovers {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex.hovers div {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 14.28571vw;
+  background-size: 130%;
+  background-position: center;
+  overflow: hidden;
+  transition: background-size 200ms ease-in-out;
+}
+.flex.hovers div:hover {
+  background-size: 150%;
+}
+.flex.hovers div:nth-child(1) {
+  background-image: url("../img/page-1_img8.jpg");
+}
+.flex.hovers div:nth-child(2) {
+  background-image: url("../img/page-1_img9.jpg");
+}
+.flex.hovers div:nth-child(3) {
+  background-image: url("../img/page-1_img10.jpg");
+}
+.flex.hovers div:nth-child(4) {
+  background-image: url("../img/page-1_img11.jpg");
+}
+.flex.hovers div:nth-child(5) {
+  background-image: url("../img/page-1_img12.jpg");
+}
+.flex.hovers div:nth-child(6) {
+  background-image: url("../img/page-1_img8.jpg");
+}
+.flex.hovers div:nth-child(7) {
+  background-image: url("../img/page-1_img9.jpg");
 }
