@@ -1,0 +1,27 @@
+$character-list: starlord gamora drax rocket groot ronan nebula korath;
+
+@each $character in $character-list {
+	$i: index($character-list, $character);
+	section:nth-child(#{$i}){
+		&::before {
+			content: '#{$character}';
+			display: block;
+			width: 100%;
+			color: white;
+			font-size: 2em;
+			font-weight: 400;
+			font-family: serif;
+			text-align: center;
+			margin-bottom: 20px;
+			background-color: hsla(0, 0%, 0%, .25);
+			text-transform: uppercase;
+		}
+	}
+}
+
+@for $i from 1 through length($character-list){
+	$clr: (360 / length($character-list)) * $i - length($character-list);
+	section:nth-child(#{$i})::before{
+		background-color: hsla($clr, 30%, 60%, .75);
+	}
+}

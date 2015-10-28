@@ -1,0 +1,101 @@
+@import "variables";
+@import "reset";
+//@import "each";
+//@import "fontawesome";
+//@import "challenge";
+//@import "test";
+
+/* sass goes here */
+
+/*
+$grad: hsla(0, 0%, 0%, .65);
+
+body {
+	font: {
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+	line-height: 1.5;
+}
+p {
+
+}
+
+nav {
+	color: white;
+	padding-top: 10vw;
+	background: {
+		image: linear-gradient($grad, $grad), url('../img/guardians.jpg');
+		position: center;
+		size: cover;
+	}
+	h1 {
+		margin-bottom: 10vw;
+		text-align: center;
+		font-size: 4em;
+		font-family: serif;
+	}
+	ul {
+		font-weight: 200;
+		display: flex;
+		justify-content: space-between;
+		a {
+			display: block;
+			padding: 20px 20px;
+		}
+	}
+}
+main {
+	div:first-child {
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px solid hsla(0, 0%, 0%, .10);
+	}
+	div:last-child {
+		display: flex;
+	}
+	dl {
+		box-sizing: border-box;
+		width: 50%;
+		padding: 20px;
+	}
+	section {
+		box-sizing: border-box;
+		width: 50%;
+		padding: 20px;
+		img {
+			float: left;
+			margin-right: 20px;
+		}
+	}
+	section:nth-child(3n+1){
+		width: 100%;
+		background-color: hsla(0, 0%, 0%, .05);
+	}
+	section:nth-child(3n+2){
+		border-right: 1px solid hsla(0, 0%, 0%, .10);
+		img {
+			float: right;
+			margin-right: 0;
+			margin-left: 20px;
+		}
+	}
+	img {
+		width: 25%;
+		height: auto;
+	}
+}
+
+footer {
+	background-color: hsla(0, 0%, 0%, .25);
+	padding: 20px;
+	font-size: 80%;
+	p {
+		margin: 0;
+
+	}
+}
+*/
+
+

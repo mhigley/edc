@@ -1,0 +1,36 @@
+@import "variables";
+@import "reset";
+@import "challenge";
+//@import "fontawesome";
+
+/* sass goes here */
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	div {
+		box-sizing: border-box;
+		width: 33.3333%;
+		padding: 10px 10px 10px 10px;
+		font-family: sans-serif;
+		img {
+			float: left;
+			margin-right: 10px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

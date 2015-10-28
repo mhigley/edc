@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul li {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+ul img {
+  border-radius: 100%;
+}
+ul img:first-of-type {
+  width: 50%;
+}
+ul img:last-of-type {
+  border-top-left-radius: 50px 50%;
+  border-top-right-radius: 50px 50%;
+  border-bottom-right-radius: 50px 50%;
+  border-bottom-left-radius: 50px 50%;
+}

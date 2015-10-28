@@ -1,0 +1,59 @@
+//$hdrgrad: hsla(0, 0%, 0%, .10);
+$key: hsla(205, 46%, 83%, 1);
+$keylite: lighten($key, 10);
+$keydark: darken($key, 50);
+$comp: complement($key);
+$complite: lighten($comp, 10);
+$compdark: darken($comp, 50);
+$cta: hsla(153, 51%, 34%, 1);
+$ctalite: lighten($cta, 10);
+$ctadark: darken($cta, 10);
+$black: hsla(0, 0%, 20%, 1);
+$blacklite: lighten($black, 10);
+$blackdark: darken($black, 10);
+$white: hsla(0, 0%, 100%, 1);
+$whitedark: darken($white, 10);
+//$hdrgrad: transparentize($keydark, .90);
+
+#{headings()}{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -.075em;
+	color: $keydark;
+}
+
+/*
+@mixin hdrgrad($a){
+	$hdrgrad: transparentize($keydark, $a);
+}
+*/
+
+@function hdrgrad($clr, $a){
+	@return transparentize($clr, $a);
+}
+
+@mixin content($tb, $lr){
+	padding: $tb $lr;
+}
+
+%content {
+	padding: 2vw 5vw;
+}
+
+$break-sm: 544px; //34em
+$break-md: 768px; //48em
+$break-lg: 992px; //62em
+$break-xl: 1200px; //75em
+
+//@media (min-width: 34em) { ... }
+
+// Medium devices (tablets, 48em and up)
+//@media (min-width: 48em) { ... }
+
+// Large devices (desktops, 62em and up)
+//@media (min-width: 62em) { ... }
+
+// Extra large devices (large desktops, 75em and up)
+//@media (min-width: 75em) { ... }
+

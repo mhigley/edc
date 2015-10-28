@@ -1,0 +1,131 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+body {
+	display: flex;
+	flex-direction: column;
+	main {
+		flex: 1;
+	}
+}
+
+nav {
+	display: flex;
+	h1 {
+		margin-right: auto;
+	}
+	ul {
+		display: inline-flex;
+		a {
+			padding: 0 10px;
+		}
+	}
+}
+
+main, #lists  {
+	//height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+section {
+	box-sizing: border-box;
+	width: 50%;
+	padding: 10px;
+	img {
+		float: right;
+		width: 25%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 34em){
+	main, #lists {
+		flex-direction: column;
+	}
+	section {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+nav {
+	display: flex;
+	h1 {
+		margin-right: auto;
+	}
+	ul {
+		display: inline-flex;
+		a {
+			padding: 0 10px;
+		}
+	}
+}
+
+.hero {
+	width: 100%;
+	height: 40vw;
+	background: {
+		image: url('../img/guardians.jpg');
+		size: cover;
+		position: center 25%;
+	}
+}
+
+main {
+	> div {
+		display: flex;
+		flex-wrap: wrap;
+		div, dl {
+			width: calc(50% - 20px);
+			padding: 10px;
+		}
+	}
+	img {
+		float: right;
+		width: 25%;
+		height: auto;
+	}
+}
+
+*/
