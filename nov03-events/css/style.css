@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  background-color: whitesmoke;
+}
+
+p, input {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 5vw;
+}
+
+h1 {
+  text-align: center;
+  margin: 5vw;
+}
+
+main {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  margin: 50px auto;
+  position: relative;
+}
+main span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: mediumpurple;
+  z-index: 1;
+}
+main div {
+  position: absolute;
+  background-color: black;
+  z-index: 10;
+}
+main div:nth-of-type(odd) {
+  width: 110px;
+  height: 20px;
+}
+main div:nth-of-type(even) {
+  width: 20px;
+  height: 50px;
+}
+main div:nth-of-type(1) {
+  top: 50px;
+  left: 0;
+}
+main div:nth-of-type(2) {
+  top: 50px;
+  left: 100px;
+}
+main div:nth-of-type(3) {
+  top: 100px;
+  left: 100px;
+}
+main div:nth-of-type(4) {
+  top: 100px;
+  left: 200px;
+}
+main div:nth-of-type(5) {
+  width: 75px;
+  top: 150px;
+  left: 200px;
+}
+main div:nth-of-type(6) {
+  height: 75px;
+  top: 150px;
+  left: 265px;
+}
+main div:nth-of-type(7) {
+  top: 215px;
+  left: 175px;
+}
+main div:nth-of-type(8) {
+  height: 80px;
+  top: 220px;
+  left: 175px;
+}
+main i {
+  text-style: normal;
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,5 +1,22 @@
-@import "variables";
-@import "reset";
-//@import "fontawesome";
+@for $i from 1 through 3 {
+	div:nth-child(#{$i}){
+		width: 2em * $i;
+	}
+}
 
-/* sass goes here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

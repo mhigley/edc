@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+main {
+  height: inherit;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main div:first-child {
+  background-color: lightgray;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.25vw;
+  border-radius: 0.625vw;
+  border: 1px solid #bababa;
+  margin: 5vw;
+}
+main div:first-child span {
+  display: block;
+  width: 5vw;
+  height: 5vw;
+  background-color: #dbc900;
+  border-radius: 100%;
+  margin: 1.25vw;
+  border: 1px solid #bababa;
+}
+main div:first-child span:hover {
+  background-color: #ffef42;
+  cursor: pointer;
+}
+main div:first-child span:first-child {
+  background-color: #db0000;
+}
+main div:first-child span:first-child:hover {
+  background-color: #ff4242;
+}
+main div:first-child span:last-child {
+  background-color: #49db00;
+}
+main div:first-child span:last-child:hover {
+  background-color: #81ff42;
+}
+main div:last-child {
+  width: 12vw;
+  height: 26.66664vw;
+  margin: 5vw;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: walking .75s infinite;
+          animation: walking .75s infinite;
+}
+
+@-webkit-keyframes walking {
+  12.5% {
+    background-image: url("../img/walk1.gif");
+  }
+  25% {
+    background-image: url("../img/walk2.gif");
+  }
+  37.5% {
+    background-image: url("../img/walk3.gif");
+  }
+  50% {
+    background-image: url("../img/walk4.gif");
+  }
+  62.5% {
+    background-image: url("../img/walk5.gif");
+  }
+  75% {
+    background-image: url("../img/walk6.gif");
+  }
+  87.5% {
+    background-image: url("../img/walk7.gif");
+  }
+  100% {
+    background-image: url("../img/walk8.gif");
+  }
+}
+
+@keyframes walking {
+  12.5% {
+    background-image: url("../img/walk1.gif");
+  }
+  25% {
+    background-image: url("../img/walk2.gif");
+  }
+  37.5% {
+    background-image: url("../img/walk3.gif");
+  }
+  50% {
+    background-image: url("../img/walk4.gif");
+  }
+  62.5% {
+    background-image: url("../img/walk5.gif");
+  }
+  75% {
+    background-image: url("../img/walk6.gif");
+  }
+  87.5% {
+    background-image: url("../img/walk7.gif");
+  }
+  100% {
+    background-image: url("../img/walk8.gif");
+  }
+}
+/* sass goes here */
