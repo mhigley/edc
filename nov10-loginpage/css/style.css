@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-size: 100%;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+}
+
+#loginBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  background-image: linear-gradient(white, #f2f2f2);
+  padding: 20px;
+  width: 300px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+#loginBox form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#loginBox label {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+#loginBox label span {
+  font-size: 80%;
+  line-height: 2;
+  color: rgba(23, 23, 23, 0.5);
+}
+#loginBox small {
+  line-height: 2;
+  color: #b34d4d;
+}
+#loginBox input {
+  font-size: 1.25em;
+  line-height: 1.5;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 4px;
+}
+#loginBox input[type='submit'] {
+  padding: 2px 10px;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  background-image: linear-gradient(#66cccc, #40bfbf);
+  border-color: #339999;
+  color: white;
+  cursor: pointer;
+}
+#loginBox input[type='submit']:hover {
+  background-image: linear-gradient(#40bfbf, #339999);
+  border-color: #267373;
+}

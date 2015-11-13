@@ -6,7 +6,7 @@ var spanObj = document.getElementsByTagName('span')[0],
 	smallObj = document.getElementsByTagName('small')[0],
 	iObj = document.getElementsByTagName('i')[0],
 	//timeStart = Number(prompt("how long to finish?")),
-	timeStart = 25,
+	timeStart = 5,
 	timeLeft = timeStart,
 	timerId;
 
