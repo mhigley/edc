@@ -2615,7 +2615,7 @@ main {
 }
 .figure .figimage img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .figure .figimage div {
   position: absolute;
