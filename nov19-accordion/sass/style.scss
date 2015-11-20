@@ -1,0 +1,72 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+$white: hsla(0, 0%, 96%, 1);
+$black: hsla(0, 0%, 9%, 1);
+
+$key: hsla(244, 14%, 21%, 1);
+$keylite: lighten($key, 10);
+$keydark: darken($key, 10);
+
+body {
+	font: {
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+	line-height: 1.5;
+	color: $black;
+}
+ul {
+	width: 350px;
+	margin: 5vw auto;
+	background-color: $key;
+	color: $white;
+	li {
+		padding: 10px 20px 10px 10px;
+		background-image: linear-gradient($key, $keydark);
+		border-top: 1px solid $keylite;
+		p {
+			margin: 0;
+			position: relative;
+			&.more::after {
+				display: flex;
+				align-items: center;
+				height: 100%;
+
+				font:normal normal normal 14px/1 FontAwesome;
+				font-size:inherit;
+				text-rendering:auto;
+				-webkit-font-smoothing:antialiased;
+				-moz-osx-font-smoothing:grayscale;
+
+				content: '\f078';
+
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				transition: all 500ms ease-in-out;
+			}
+			&.more:hover::after {
+				opacity: .15;
+				transform: rotate(-180deg);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
