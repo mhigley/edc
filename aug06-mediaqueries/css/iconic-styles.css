@@ -1,0 +1,175 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+header nav::before, .hero ul::before, header nav::after, .hero ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header nav, .hero ul {
+  padding: 0 5vw;
+}
+
+.hero li {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 50px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: -0.75px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: white;
+  color: #123540;
+  transition: all 250ms ease-in-out;
+}
+
+body {
+  background-color: #3498b7;
+  color: white;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 1.25;
+  background-image: url("../img/bg.svg");
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: white;
+  color: #123540;
+  width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+header ul {
+  float: right;
+}
+header ul li {
+  display: inline-block;
+  line-height: 1.25rem;
+  font-size: 80%;
+  position: relative;
+}
+header ul li.dropdown:hover ul {
+  left: -5px;
+}
+header ul li a {
+  padding: 0 10px;
+}
+header ul li ul {
+  position: absolute;
+  left: -9999px;
+  top: 100%;
+  width: 150px;
+  padding: 10px 5px 10px;
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+header ul li li {
+  font-size: 100%;
+  display: block;
+  line-height: 2;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 900;
+  float: left;
+}
+
+main {
+  padding-top: 1.25rem;
+}
+
+hgroup {
+  text-align: center;
+}
+hgroup h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+hgroup h2 {
+  font-size: 1.65em;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.hero {
+  text-align: center;
+}
+.hero li {
+  width: 25%;
+  float: left;
+}
+.hero i {
+  display: block;
+  margin: 0 auto;
+  width: 14vw;
+  height: 14vw;
+  line-height: 14vw;
+  font-size: 7vw;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.hero p {
+  width: 80%;
+  margin: 0 auto;
+}
+.hero .btn:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 3em;
+    font-weight: 400;
+  }
+  .hero li {
+    width: 50%;
+    margin: 25px 0 25px;
+  }
+  .hero i {
+    width: 24.5vw;
+    height: 24.5vw;
+    line-height: 24.5vw;
+    font-size: 12.25vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .hero i {
+    width: 36.75vw;
+    height: 36.75vw;
+    line-height: 36.75vw;
+    font-size: 18.375vw;
+  }
+  .hero p {
+    width: 100%;
+  }
+}

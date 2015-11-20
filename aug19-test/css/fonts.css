@@ -1,0 +1,17 @@
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+ul li a {
+  font-size: 2rem;
+}
+
+#sizer {
+  position: fixed;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+  font-size: 100%;
+  font-family: sans-serif;
+  font-weight: 200;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  height: 100%;
+  padding: 10vw 5vw;
+}
+main div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+main div p:last-child {
+  color: red;
+}
+
+textarea {
+  width: 100%;
+  min-height: 50%;
+  font-size: 1.5em;
+}

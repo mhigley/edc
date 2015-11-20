@@ -1,0 +1,40 @@
+section {
+	&#featured div {
+		box-sizing: border-box;
+		width: (100% / 3);
+		padding: 50px;
+		background-color: $white-lighter;
+	}
+	&#agency div {
+		width: (100% / 3);
+		height: 30vw;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+@for $i from 1 through 6 {
+	nav li:nth-of-type(#{$i}):hover,
+	section#featured div:nth-of-type(#{$i}):hover{
+		background-color: hsla(random(360), 30%, 80%, 1);
+	}
+}
+
+$intro-list: hero featured agency;
+@each $intro-img in $intro-list {
+	$i: index($intro-list, $intro-img);
+	div##{$intro-img}_intro{
+		background-image: url('../img/intro-#{$intro-img}.jpg');
+	}
+}
+
+$agency-list: brianne franklin angie claire gary genie jacob jonathan phillip rebecca shaun tessa;
+@each $agency-item in $agency-list {
+	$i: index($agency-list, $agency-item);
+	section#agency div:nth-of-type(#{$i}){
+		background-image: url('../img/agency-#{$agency-item}.jpg');
+	}
+}
+
+
+

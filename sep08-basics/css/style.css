@@ -1,0 +1,33 @@
+body {
+	background-color: #00cdcf;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+h1 {
+	width: 50%;
+	margin: 10px auto;
+	padding: 40px 80px;
+	border-width: 4px 1px;
+	border-style: double solid;
+	border-color: #ffffff;
+	text-align: center;
+	font-weight: inherit;
+}
+p {
+	text-align: center;
+}
+strong {
+	font-weight: 700;
+}
+a {
+	display: block;
+	width: 150px;
+	background-color: #009a9c;
+	color: inherit;
+	text-align: center;
+	padding: 10px 20px;
+	margin: 50px auto;
+	text-decoration: none;
+}

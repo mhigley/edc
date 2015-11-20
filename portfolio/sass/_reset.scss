@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.btn {
+	background-color: $cta;
+	padding: .5em 1.5em;
+	color: $white;
+	border: 1px solid $ctadark;
+	border-radius: .25em;
+	font-weight: 100;
+	font-size: 1em;
+	transition: all 200ms ease-in-out;
+	&:hover {
+		background-color: lighten($cta, 5);
+		border-color: lighten($ctadark, 5);
+	}
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}

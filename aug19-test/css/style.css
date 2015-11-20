@@ -1,0 +1,251 @@
+/* put your scss here */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300|Josefin+Slab:400,100,300,600,700);
+section#featured div {
+  box-sizing: border-box;
+  width: 33.33333%;
+  padding: 50px;
+  background-color: whitesmoke;
+}
+section#agency div {
+  width: 33.33333%;
+  height: 30vw;
+  background-position: center;
+  background-size: cover;
+}
+
+nav li:nth-of-type(1):hover,
+section#featured div:nth-of-type(1):hover {
+  background-color: #dbbdcb;
+}
+
+nav li:nth-of-type(2):hover,
+section#featured div:nth-of-type(2):hover {
+  background-color: #bdd3db;
+}
+
+nav li:nth-of-type(3):hover,
+section#featured div:nth-of-type(3):hover {
+  background-color: #dbd5bd;
+}
+
+nav li:nth-of-type(4):hover,
+section#featured div:nth-of-type(4):hover {
+  background-color: #bddbd5;
+}
+
+nav li:nth-of-type(5):hover,
+section#featured div:nth-of-type(5):hover {
+  background-color: #bddbc3;
+}
+
+nav li:nth-of-type(6):hover,
+section#featured div:nth-of-type(6):hover {
+  background-color: #bdd4db;
+}
+
+div#hero_intro {
+  background-image: url("../img/intro-hero.jpg");
+}
+
+div#featured_intro {
+  background-image: url("../img/intro-featured.jpg");
+}
+
+div#agency_intro {
+  background-image: url("../img/intro-agency.jpg");
+}
+
+section#agency div:nth-of-type(1) {
+  background-image: url("../img/agency-brianne.jpg");
+}
+
+section#agency div:nth-of-type(2) {
+  background-image: url("../img/agency-franklin.jpg");
+}
+
+section#agency div:nth-of-type(3) {
+  background-image: url("../img/agency-angie.jpg");
+}
+
+section#agency div:nth-of-type(4) {
+  background-image: url("../img/agency-claire.jpg");
+}
+
+section#agency div:nth-of-type(5) {
+  background-image: url("../img/agency-gary.jpg");
+}
+
+section#agency div:nth-of-type(6) {
+  background-image: url("../img/agency-genie.jpg");
+}
+
+section#agency div:nth-of-type(7) {
+  background-image: url("../img/agency-jacob.jpg");
+}
+
+section#agency div:nth-of-type(8) {
+  background-image: url("../img/agency-jonathan.jpg");
+}
+
+section#agency div:nth-of-type(9) {
+  background-image: url("../img/agency-phillip.jpg");
+}
+
+section#agency div:nth-of-type(10) {
+  background-image: url("../img/agency-rebecca.jpg");
+}
+
+section#agency div:nth-of-type(11) {
+  background-image: url("../img/agency-shaun.jpg");
+}
+
+section#agency div:nth-of-type(12) {
+  background-image: url("../img/agency-tessa.jpg");
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #3b3b3b;
+  line-height: 2;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #212121;
+  line-height: 1.50;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+p {
+  margin-top: 0;
+}
+
+header {
+  background-color: #ebebeb;
+}
+
+nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+nav ul li, nav ul li a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul li a {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav ul li:hover {
+  background-color: whitesmoke;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+
+div.intro {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 200px 0 300px;
+}
+div.intro hgroup {
+  width: 75vw;
+}
+div.intro h1, div.intro h2 {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ebebeb;
+  padding: 10px 20px;
+}
+
+section.content {
+  padding: 100px 5vw;
+}
+
+section#desktop {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section#desktop img {
+  float: right;
+  margin: 0 0 50px 50px;
+  width: 35vw;
+  border-radius: 20px;
+  border: 20px solid whitesmoke;
+}
+section#featured {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0;
+}
+section#agency {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+section#map {
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  color: #c4c4c4;
+  background-color: #3b3b3b;
+  padding: 20px 5vw;
+}
+footer p {
+  margin: 0;
+}

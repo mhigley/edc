@@ -1,0 +1,16 @@
+display
+color
+background-color
+width
+padding
+margin
+margin-right
+border
+border-bottom
+border-radius
+list-style
+text-align
+text-decoration
+float
+text-shadow
+transition

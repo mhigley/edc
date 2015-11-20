@@ -1,0 +1,25 @@
+body {
+	display: flex;
+}
+div {
+	width: 30%;
+	height: 30vw;
+}
+
+@for $i from 2 through 3 {
+	div:nth-of-type(#{$i})::before{
+		//content: "a div";
+	}
+}
+$fruits: apple banana orange;
+@each $fruit in $fruits {
+	$i: index($fruits, $fruit);
+	div:nth-of-type(#{$i})::before{
+		content: "I like #{$fruit}'s";
+	}
+}
+
+
+
+
+

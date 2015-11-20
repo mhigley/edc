@@ -1,0 +1,131 @@
+@import "fontawesome";
+@import "reset";
+@import "variables";
+@import "logic";
+
+body {
+	background-color: hsla(0, 0%, 95%, 1);
+}
+main {
+	width: 50%;
+	height: 35vw;
+	background-color: $red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	background: {
+		image: url('../img/banner.jpg');
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+	border: 1px solid white;
+	box-shadow: -5px 5px 20px 0 transparentize(black, .5);
+}
+
+span {
+	display: inline-block;
+	&::before, &::after {
+		display:inline-block;
+		font:normal normal normal 14px/1 FontAwesome;
+		font-size:inherit;
+		text-rendering:auto;
+		-webkit-font-smoothing:antialiased;
+		-moz-osx-font-smoothing:grayscale;
+	}
+}
+
+#top-header,
+#bottom-header {
+	
+	@extend %clearfix;
+	padding: .5vw;
+}
+#top-header {
+	background-color: hsla(0, 0%, 95%, 1);
+}
+.ot-btns {
+	float: left;
+	span {
+		color: yellow;
+		width: 1vw;
+		@include font-height(1vw);
+		&::before {
+			content: '\f111';
+		}
+		&:first-child {
+			color: red;
+		}
+		&:last-child{
+			color: green;
+		}
+	}
+}
+.user {
+	$user-btn: 4vw;
+	float: right;
+	border: 1px solid black;
+	//width: $user-btn;
+	//height: ($user-btn/2);
+	@include font-height(1.5vw);
+	font-family: sans-serif;
+	padding: 0 .4vw;
+	border-radius: 4px;
+	display: inline-block;
+}
+header hr {
+	margin: 0;
+	border-width: 0 0 1px 0;
+}
+#bottom-header {
+	background-color: hsla(0, 0%, 92%, 1);
+}
+
+.nav-btns {
+	float: left;
+	span {
+		width: 3.5vw;
+		@include font-height(1.5vw);
+	}
+	span::before {
+		width: 1.75vw;
+		content: '\f060';
+	}
+	span::after {
+		width: 1.75vw;
+		content: '\f061';
+	}
+}
+
+.refresh {
+	float: left;
+	span {
+		@include font-height(1.5vw);
+	}
+	span::before {
+		content: '\f021';
+	}
+	span:hover::before {
+		content: '\f00d';
+	}
+}
+.addr {
+	float: left;
+	//width: calc(100% - 6vw);
+	@include font-height(2vw);
+}
+.settings {
+	float: left;
+	span {
+		@include font-height(1.5vw);
+	}
+	span::before {
+		content: '\f0c9';
+	}
+}
+
+
+
+
+

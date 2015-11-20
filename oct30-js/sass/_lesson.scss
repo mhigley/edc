@@ -1,0 +1,74 @@
+$red: hsla(0, 100%, 43%, 1);
+$yellow: hsla(55, 100%, 43%, 1);
+$green: hsla(100, 100%, 43%, 1);
+
+html, body {
+	height: 100%;
+	background-color: hsla(0, 0%, 96%, 1);
+}
+
+main {
+	height: inherit;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	div:first-child {
+		$litesize: 5vw;
+		background-color: lightgray;
+		display: flex;
+		flex-direction: column;
+		padding: $litesize / 4;
+		border-radius: $litesize / 8;
+		border: 1px solid darken(lightgray, 10);
+		margin: $litesize;
+		span {
+			display: block;
+			width: $litesize;
+			height: $litesize;
+			background-color: $yellow;
+			border-radius: 100%;
+			margin: $litesize / 4;
+			border: 1px solid darken(lightgray, 10);
+			&:hover {
+				background-color: lighten($yellow, 20);
+				cursor: pointer;
+			}
+			&:first-child{
+				background-color: $red;
+				&:hover {
+					background-color: lighten($red, 20);
+				}
+			}
+			&:last-child{
+				background-color: $green;
+				&:hover {
+					background-color: lighten($green, 20);
+				}
+			}
+		}
+	}
+	div:last-child {
+		$imgsize: 12vw;
+		width: $imgsize;
+		height: $imgsize * 2.22222;
+		margin: 5vw;
+		background: {
+			position: center;
+			size: cover;
+		}
+		animation: walking .75s infinite;
+	}
+}
+
+
+@keyframes walking {
+	$percdiv: (100 / 8);
+	@for $i from 1 through 8 {
+		$perc: ($percdiv * $i);
+		//@debug '#{$perc}%';
+		#{$perc}% {
+			background-image: url('../img/walk#{$i}.gif');
+		}
+	}
+}

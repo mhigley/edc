@@ -1,0 +1,41 @@
+h1{
+	position: relative;
+	width: 450px;
+	height: 450px;
+}
+h1::before,
+h1::after {
+	content: "";
+	display: block;
+	width: 200px;
+	height: 200px;
+	border: 50px solid pink;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+}
+h1::before {
+	left: 0;
+}
+h1::after {
+	right: 0;
+}
+div {
+	position: absolute;
+	top: calc(50% - 120px);
+}
+div::before,
+div::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	position: absolute;
+}
+div::before {
+	left: 0;
+}
+div::after {
+	right: 0;
+}

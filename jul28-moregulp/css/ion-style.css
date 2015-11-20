@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+nav::before, section::before, nav::after, section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+nav > a:last-of-type {
+  padding: 7px 21px;
+}
+
+.btn {
+  padding: 12px 72px;
+}
+
+body {
+  margin: 0;
+  color: #566067;
+  font-family: "Roboto";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border-radius: 4px;
+  transition: all 150ms ease-in-out;
+}
+.btn.btn-blue {
+  background-color: #619dd1;
+}
+.btn.btn-blue:hover {
+  background-color: #75a9d7;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  padding: 5px 10px;
+}
+nav > a:first-of-type {
+  float: left;
+  line-height: 1.8;
+  color: #6d7a83;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 1.8;
+}
+nav ul li a {
+  color: #566067;
+  font-size: 85%;
+  padding: 5px 15px;
+  font-weight: 300;
+}
+nav > a:last-of-type {
+  float: right;
+  font-size: 85%;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.hero {
+  padding: 125px 0 100px;
+  height: 200px;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  color: white;
+}
+.hero h1, .hero h2 {
+  margin: 10px;
+}
+.hero h1 {
+  font-size: 250%;
+  font-weight: 300;
+  letter-spacing: .25em;
+}
+.hero h2 {
+  font-weight: 200;
+}
+.hero hgroup {
+  margin: 10px 10px 50px;
+}
+.hero a {
+  margin: 0 10px;
+}
+
+section {
+  padding: 100px 5%;
+}
+section h2, section h3 {
+  margin: 10px;
+  text-align: center;
+}
+section h2 {
+  font-weight: 300;
+  font-size: 200%;
+}
+section h3 {
+  font-weight: 200;
+  font-size: 160%;
+  color: #a3acb2;
+}
+
+section:nth-of-type(1) > div {
+  width: 30%;
+  float: left;
+  border: 1px solid #dbdee1;
+  border-radius: 10px;
+  margin: 0 2.5%;
+  padding: 20px;
+  text-align: center;
+}
+section:nth-of-type(1) > div:first-of-type {
+  margin-left: 0;
+}
+section:nth-of-type(1) > div:last-of-type {
+  margin-right: 0;
+}
+section:nth-of-type(1) > div i {
+  background-color: #619dd1;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #dbdee1;
+  color: white;
+  padding: 10px;
+}
+section:nth-of-type(1) > div h4 {
+  font-size: 125%;
+  font-weight: 300;
+}
+section:nth-of-type(1) > div p {
+  line-height: 1.75;
+  font-weight: 300;
+}

@@ -1,0 +1,126 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*
+html, body {
+	height: 100%;
+}
+body {
+	background-image: linear-gradient(to top, #ccc, #fff);
+	margin: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ul li {
+	display: inline-block;
+	width: 33.3333%;
+	float: left;
+}
+figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+ul li:hover div {
+	bottom: 0;
+	opacity: 1;
+}
+div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 100%;
+	left: 0;
+	background-color: hsla(0, 0%, 0%, .5);
+	opacity: 0;
+	transition: all 250ms ease-in-out;
+}
+img {
+	width: 100%;
+	float: left;
+}
+ul li:hover figcaption {
+	bottom: 0;
+}
+figcaption {
+	position: absolute;
+	bottom: -50%;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	color: white;
+	transition: all 250ms ease-in-out;
+}
+ul li:hover a {
+	margin-top: 50%;
+}
+a:hover {
+	border-color: hsla(40, 100%, 50%, 1);
+	background-color: hsla(40, 100%, 50%, .25);
+}
+a {
+	display: block;
+	width: 50%;
+	height: 40px;
+	margin: -50% auto 0;
+	border: 2px solid white;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	background-color: hsla(0, 0%, 100%, .25);
+	transition: all 250ms ease-in-out;
+}
+*/
+
+input:focus {
+	outline: none;
+	background-color: teal;
+	color: white;
+}
+
+a {
+	color: green;
+	transition: font-size 500ms ease-in-out;
+}
+a:link {
+	color: purple;
+	text-decoration: underline;
+}
+a:visited {
+	color: pink;
+	
+}
+a:hover {
+	color: red;
+}
+a:active {
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

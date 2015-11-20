@@ -1,0 +1,158 @@
+/* put your scss here */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+
+$main-orange: hsla(11, 80%, 57%, 1);
+$main-white: hsla(0, 0%, 95%, 1);
+$main-gray: hsla(0, 0%, 13%, 1);
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1, h2, h3, h4 {text-transform: uppercase;font-weight: 300;}
+h1 {font-size: 300%;margin-bottom: 0;}
+h2 {font-size: 180%;margin-bottom: 40px;}
+h3 {font-size: 150%;margin-top: 0;}
+h4 {font-size: 120%;}
+a {
+	text-decoration: underline;
+	color: $main-orange;
+}
+p {
+	line-height: 2;
+	font-weight: 300;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	li {
+		border-bottom: 1px solid lightgray;
+		padding: 15px 0;
+		&::before, &::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		img {
+			float: left;
+			margin-right: 15px;
+		}
+	}
+	li:last-child {
+		border: none;
+	}
+}
+hr {
+	border-color: transparentize($main-white, .9);
+}
+.content {
+	padding: {
+		top: 100px;
+		bottom: 25px;
+	}
+}
+.btn {
+	border: none;
+	text-decoration: none;
+}
+.btn-lg {
+	padding: {
+		left: 20px;
+		right: 20px;
+	}
+}
+.btn-exmachina {
+	text-transform: uppercase;
+	margin-top: 30px;
+    color: $main-white;
+    background-color: $main-orange;
+    transition: all 500ms ease-out;
+    &:hover {
+    	color: $main-white;
+    	background-color: darken($main-orange, 10);
+    }
+}
+
+.hero {
+	height: 350px;
+	background: {
+		image: url("../img/banner.jpg");
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+}
+
+#row1 img {
+	width: 100%;
+	height: auto;
+}
+main {
+	hr {
+		margin: 100px 0;
+	}
+	h2 {
+		margin-top: 0;
+	}
+	.content {
+		padding: 0;
+	}
+	background: {
+		image: url("../img/img01.jpg");
+		repeat: repeat;
+		color: $main-gray;
+
+	}
+	padding: 100px 0 25px;
+}
+#row3 {
+	.content {
+		padding: 25px;
+		background-color: $main-white;
+	}
+}
+#row4 {
+	h2 {
+		color: $main-white;
+	}
+	li, p {
+		color: transparentize($main-white, .6);
+	}
+	p strong {
+		color: transparentize($main-white, .2);
+	}
+	blockquote {
+		background-color: $main-white;
+		border: none;
+		border-radius: 5px;
+		font-weight: 300;
+		line-height: 2;
+		padding: 30px;
+		cite {
+			display: block;
+			font-weight: 700;
+			font-style: normal;
+		}
+	}
+}
+footer {
+	text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+	a.btn {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+

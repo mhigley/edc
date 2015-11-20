@@ -1,0 +1,79 @@
+.bubble {
+	background-color: hsla(190, 50%, 90%, 1);
+	padding: 40px;
+	margin: 20px;
+	border-radius: 200px;
+	font-size: 24px;
+	text-align: center;
+	font-family: sans-serif;
+	position: relative;
+}
+.bubble::before {
+	content: "";
+	display: block;
+	border-width: 0px 30px 30px 30px;
+	border-style: solid;
+	border-color: transparent hsla(190, 50%, 90%, 1) transparent transparent;
+	position: absolute;
+	top: 100%;
+	left: 60%;
+}
+
+
+.phone {
+	width: 300px;
+	height: 595px;
+	border: 2px solid hsla(0, 0%, 9%, 1);
+	border-radius: 20px;
+	position: relative;
+}
+.phone::before {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 4px;
+	border: 2px solid hsla(0, 0%, 9%, 1);
+	border-radius: 4px;
+	position: absolute;
+	left: calc(50% - 27px);
+	top: 20px;
+}
+.phone::after {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid hsla(0, 0%, 9%, 1);
+	position: absolute;
+	left: calc(50% - 20px);
+	bottom: 5px;
+}
+.screen {
+	width: 280px;
+	height: 495px;
+	background-color: hsla(0, 0%, 9%, 1);
+	background-image: url("http://3.bp.blogspot.com/-HjPyg6f3Hcc/UPXBT3TV5PI/AAAAAAAABe4/aiqDv75CpF4/s1600/Samsung+Galaxy+Nexus+Screenshots+-+02+-+02+-+Daily.png");
+	background-size: 100%;
+	margin: 50px 10px;
+}
+
+
+
+
+
+
+ul {
+	background-color: hsla(0, 30%, 90%, 1);
+	list-style: none;
+}
+ul::before,
+ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+ul li {
+	background-color: hsla(300, 30%, 70%, 1);
+	float: left;
+}

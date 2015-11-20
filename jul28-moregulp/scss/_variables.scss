@@ -1,0 +1,32 @@
+//variables
+$font-stack: Helvetica, Arial, sans-serif;
+$main-color: teal;
+$main-color-light: lighten($main-color, 20);
+$main-color-dark: darken($main-color, 10);
+
+$aside-width: 200px;
+$asides: calc( 100% - #{$aside-width * 2} ); // #{} = interpolation
+
+$pad: 40px;
+$halfpad: $pad / 2;
+
+
+//placeholders (not a variable)
+%clearfix {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.bubble {
+	background-color: hsla(0, 0%, 100%, .10);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+
+

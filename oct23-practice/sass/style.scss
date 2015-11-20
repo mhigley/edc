@@ -1,0 +1,87 @@
+@import "variables";
+@import "reset";
+// @import "fontawesome";
+
+/* sass goes here */
+header {
+	height: 35vw;
+	background: {
+		image: url('../img/guardians.jpg');
+		position: center;
+		size: cover;
+	}
+	nav {
+		position: fixed;
+		width: 100%;
+		background-color: white;
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+main {
+	div:first-of-type {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		section {
+			width: 33.3333%;
+			text-align: center;
+			span {
+				display: block;
+				width: 35%;
+				height: (33vw/3);
+				border-radius: 50%;
+				margin: 0 auto;
+			}
+		}
+		section[id^='main-']{
+			width: 100%;
+			span {
+				height: 33vw;
+				float: left;
+			}
+		}
+	}
+
+
+
+
+
+	div:last-child {
+		display: flex;
+		section {
+			width: 50%;
+		}
+	}
+}
+
+
+$chars: bereet carina collector cosmo drax gamora garthan-saal groot howard-the-duck irani-rael korath-thak kraglin-obfonteri nebula peter-quill rhomann-dey rocket-racoon ronan yondu;
+@each $char in $chars {
+	$i: index($chars, $char);
+	section:nth-child(#{$i}){
+		span {
+			background-image: url('../img/bio-#{$char}.jpg');
+		}
+	}
+}
+span {
+	background: {
+		position: center;
+		size: cover;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

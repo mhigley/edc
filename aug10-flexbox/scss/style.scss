@@ -1,0 +1,75 @@
+/* put your scss here */
+
+ul {
+	background-color: pink;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; //main axis
+	//align-items: stretch; //cross axis
+}
+li {
+	display: flex;
+	align-items: center;
+	//display: inline;
+	//width: 100px;
+	//height: 100px;
+	margin: 10px 20px;
+	background-color: hsla(200, 50%, 50%, .25);
+	&:first-child{
+		margin-right: auto;
+	}
+}
+
+
+main {
+	background-color: hsla(300, 50%, 50%, .25);
+	padding: 20px;
+	display: flex;
+}
+article {
+	flex: 4;
+	background-color: hsla(80, 50%, 50%, .25);
+	//display: flex;
+	align-items: flex-start;
+	* {
+		order: 0;
+		background-color: hsla(0, 50%, 50%, .25);
+	}
+	h1 {
+		order: 2;
+	}
+	blockquote {
+		order: 1;
+	}
+}
+
+
+
+aside {
+	flex: 1;
+	background-color: hsla(150, 50%, 50%, .25);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	ul {
+		//flex-direction: column;
+	}
+}
+
+
+
+

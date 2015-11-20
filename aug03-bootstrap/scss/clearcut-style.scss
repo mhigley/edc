@@ -1,0 +1,17 @@
+h1 {
+	margin: 0;
+}
+.hero {
+	height: 440px;
+	background: {
+		image: url('../img/banner.jpg');
+		repeat: no-repeat;
+		position: center;
+		size: cover;
+	}
+}
+.hero-banner {
+	padding: 40px 0;
+	background-color: hsla(0, 0%, 93%, 1);
+	text-align: center;
+}

@@ -1,0 +1,33 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+html, body {
+	height: 100%;
+	font-size: 100%;
+	font-family: sans-serif;
+	font-weight: 200;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	flex-direction: column;
+
+}
+main {
+	height: 100%;
+	padding: 10vw 5vw;
+	div {
+		display: flex;
+		p:last-child {
+			color: red;
+		}
+	}
+}
+textarea {
+	width: 100%;
+	min-height: 50%;
+	font-size: 1.5em;
+}

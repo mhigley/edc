@@ -1,0 +1,72 @@
+/* sass goes here */
+
+$color: blue;
+@debug (12px + 4px);
+
+$rand: random(360);
+$randcolor: hsla($rand, 50%, 50%, 1);
+$deg: hue($randcolor);
+
+@mixin div-padding($x){
+	padding: $x;
+}
+
+@mixin insta-border($x, $y, $z){
+	border-width: $y;
+	border-style: $x;
+	border-color: $z;
+	padding: $y 50px 50px;
+	color: $z;
+	text-shadow: 1px 1px 0 darken($z, 10);
+}
+
+
+
+$key: hsla(200, 50%, 50%, 1);
+$red: $key;
+
+$orange: lighten(adjust-hue($key, 35), 20);
+$lightened-orange: lighten($orange, 20);
+
+$yellow: darken(adjust-hue($key, 60), 20);
+
+$green: complement(adjust-hue($key, 100));
+
+$blue: invert(adjust-hue($key, 200));
+
+main div {
+	width: 100px;
+	height: 100px;
+	&:nth-of-type(1){
+		background-color: $red;
+		//@include div-padding(20px);
+		@include insta-border(dotted, 5px, $yellow);
+		&::before {
+			content: '#{$deg}';
+		}
+	}
+	&:nth-of-type(2){
+		background-color: $orange;
+		//@include div-padding(40px);
+		@include insta-border(inset, 15px, green);
+	}
+}
+
+main div:nth-of-type(3){
+	background-color: $yellow;
+}
+main div:nth-of-type(4){
+	background-color: $green;
+}
+main div:nth-of-type(5){
+	background-color: yellow;
+}
+
+main div:last-of-type{
+	background-color: $blue;
+}
+
+
+
+
+

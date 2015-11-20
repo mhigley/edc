@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
+
+$key-color: hsla(220, 63%, 40%, 1);
+$black: hsla(0, 0%, 0%, .8);
+$white: hsla(0, 0%, 100%, 1);
+
+/* GLOBAL styles start */
+body {
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 100%;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+}
+.btn {
+	display: inline-block;
+	background-color: $key-color;
+	padding: 20px 30px;
+	margin: 50px 0;
+	color: $white;
+	text-decoration: none;
+	border-radius: 4px;
+}
+/* GLOBAL styles end */
+
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+header {
+	$trans: transparentize($white, .5);
+	background: {
+		image: url('../img/Z.jpg');
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+	}
+	color: $white;
+	text-align: center;
+	nav {
+		padding: 50px 0;
+		margin-bottom: 100px;
+		@extend %clearfix;
+		h1 {
+			float: left;
+			margin: 0;
+		}
+		ul {
+			float: right;
+		}
+		li {
+			display: inline-block;
+			a {
+				color: $trans;
+				display: block;
+				padding: 10px 15px;
+				border-radius: 4px;
+				text-transform: uppercase;
+				font-size: .8em;
+			}
+			a:hover {
+				color: $white;
+			}
+		}
+		li.active {
+			a {
+				color: $white;
+				background-color: $key-color;
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	h2 {
+		font-size: 3em;
+		margin: 0;
+	}
+	h2 + p {
+		font-size: 1.5em;
+		margin: 0;
+		color: $trans;
+	}
+}
+@media screen and (max-width: 766px){
+	header {
+		nav {
+			h1 {
+				float: none;
+				margin-bottom: 20px;
+			}
+			ul {
+				float: none;
+			}
+			li {
+				display: block;
+				margin: 20px 0;
+			}
+		}
+	}
+}
+
+section {
+	color: $white;
+	background-color: $key-color;
+	text-align: center;
+	padding: 50px 0;
+	h3 {
+		font-size: 2em;
+		margin: 0;
+	}
+	h3 + p {
+		font-size: 1.25em;
+		margin: 0;
+	}
+	div {
+		width: 75%;
+		margin: 50px auto 0;
+	}
+	.btn {
+		background-color: $white;
+		color: $key-color;
+	}
+
+	&#silos {
+		color: $black;
+		background-color: $white;
+		@extend %clearfix;
+		div {
+			box-sizing: border-box;
+			width: 33.3333%;
+			float: left;
+			margin-top: 50px;
+			padding: 0 10px;
+		}
+		.btn {
+			background-color: $key-color;
+			color: $white;
+		}
+	}
+}
+@media screen and (max-width: 766px){
+	section#silos {
+		div {
+			width: 100%;
+			float: none;
+		}
+	}
+}
+
+footer {
+	background-color: opacify($black, .1);
+	color: transparentize($white, .5);
+	padding: 75px 0 100px;
+	text-align: center;
+	a {
+		color: $white;
+	}
+}
+
+
+
+
+
+
+
+

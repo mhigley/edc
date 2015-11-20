@@ -1,0 +1,17 @@
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin font-height($x){
+	$width: $x + .25;
+	font-size: $x;
+	line-height: 3vw;
+	&::before, &::after {
+		width: $width;
+		text-align: center;
+	}
+}

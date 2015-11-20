@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+  margin: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #4c5867;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 50px 10vw;
+}
+
+.btn {
+  border-color: #f2f2f2;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+header {
+  color: #f2f2f2;
+  background-image: url("../img/overlay.png"), linear-gradient(45deg, rgba(38, 161, 227, 0.65), rgba(231, 35, 41, 0.65)), url("../img/banner.jpg");
+  background-position: center, center, center;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: auto auto, auto auto, cover;
+  background-attachment: fixed, fixed, fixed;
+}
+header nav {
+  width: 100%;
+}
+header nav::before, header nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+header nav h1, header nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .90em;
+  letter-spacing: .5px;
+  font-weight: 700;
+  float: left;
+}
+header nav ul {
+  float: right;
+}
+header nav li {
+  margin-left: 25px;
+}
+header .cta {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+header .btn {
+  float: right;
+}
+
+#promos i {
+  float: left;
+  margin-right: 10px;
+}
+#promos i::before {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(143, 143, 143, 0.25);
+  border-radius: 100%;
+}
+#promos i:nth-of-type(3n+1) {
+  color: #609dd2;
+}
+#promos i:nth-of-type(3n+2) {
+  color: #758ce1;
+}
+#promos i:nth-of-type(3n+3) {
+  color: #e288ab;
+}
+#promos h3 {
+  width: 35%;
+  float: left;
+  display: inline-block;
+}
+#promos .content div {
+  width: 50%;
+  float: right;
+  margin-bottom: 2em;
+}
+#promos hr {
+  clear: both;
+  margin: 2em 0;
+  border-color: rgba(143, 143, 143, 0.25);
+  border-style: solid;
+}
+#promos hr:last-of-type {
+  opacity: 0;
+}
+
+#how-it-works {
+  color: #f2f2f2;
+  background-image: url("../img/overlay.png"), linear-gradient(45deg, rgba(38, 161, 227, 0.65), rgba(231, 35, 41, 0.65)), url("../img/cta.jpg");
+  background-position: center, center, center;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: auto auto, auto auto, cover;
+  background-attachment: fixed, fixed, fixed;
+}
+#how-it-works .content {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+#how-it-works .content::before, #how-it-works .content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#how-it-works .content div:first-child {
+  width: 40%;
+  float: left;
+}
+#how-it-works .content div:last-child {
+  width: 50%;
+  float: right;
+}
+
+#blog-posts hr {
+  width: 70px;
+  border-color: rgba(143, 143, 143, 0.25);
+  border-style: solid;
+  margin-left: 0;
+}
+#blog-posts ul::before, #blog-posts ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#blog-posts li {
+  margin-bottom: 40px;
+  float: left;
+  width: 50%;
+}
+#blog-posts li::before, #blog-posts li::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#blog-posts li div {
+  width: calc(50% - 40px);
+  float: left;
+  padding-right: 20px;
+}
+#blog-posts li img {
+  width: 50%;
+  height: auto;
+  float: left;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+footer {
+  color: #f2f2f2;
+  background-image: url("../img/overlay.png"), linear-gradient(45deg, rgba(38, 161, 227, 0.65), rgba(231, 35, 41, 0.65)), url("../img/banner.jpg");
+  background-position: center, center, center;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: auto auto, auto auto, cover;
+  background-attachment: fixed, fixed, fixed;
+}
+footer section {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+footer section::before, footer section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+footer section div {
+  width: 25%;
+  float: left;
+}
+footer section div:first-child {
+  width: 50%;
+}
+footer > div p {
+  text-align: center;
+  font-size: 80%;
+}

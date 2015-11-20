@@ -1,0 +1,42 @@
+/* put your scss here */
+
+
+
+@mixin arrow($direction, $color){
+	i {
+		@if ($direction == 'up'){
+			transform: rotate(-90deg);
+			color: $color;
+		}
+		@else if ($direction == 'right'){
+			transform: rotate(0deg);
+			color: $color;
+		}
+		@else if ($direction == 'down'){
+			transform: rotate(90deg);
+			color: $color;
+		}
+		@else if ($direction == 'left'){
+			transform: rotate(180deg);
+			color: $color;
+		}
+	}
+}
+
+
+a {
+	&:nth-of-type(1){
+		@include arrow('left', red);
+	}
+	&:nth-of-type(2){
+		@include arrow('right', yellow);
+	}
+	&:nth-of-type(3){
+		@include arrow('down', green);
+	}
+	&:nth-of-type(4){
+		@include arrow('up', blue);
+	}
+}
+
+

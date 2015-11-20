@@ -1,0 +1,90 @@
+/* put your scss here */
+$main: invert(desaturate(hsla(180, 87%, 28%, 1), 60));
+$main-light: lighten($main, 10);
+$main-lighter: lighten($main, 20);
+$main-dark: darken($main, 10);
+$main-darker: darken($main, 20);
+$main-comp: complement($main);
+
+$mult: 3;
+
+$font: 11px;
+$hdr: $font * $mult; 
+
+$font-weight: 100;
+$hdr-weight: $font-weight * $mult;
+
+$pad: 30px;
+$mar: $pad + ($pad * .3333);
+
+
+
+
+body {
+	background-color: $main-light;
+	font-family: sans-serif;
+	color: $main-comp;
+	font-size: $font;
+	font-weight: $font-weight;
+	margin: 0;
+}
+h1 {
+	font-size: $hdr;
+	font-weight: $hdr-weight;
+	margin: 0;
+}
+header {
+	background-color: $main-dark;
+	h1 {
+		float: left;
+	}
+	nav {
+		float: right;
+	}
+	li {
+		display: inline-block;
+	}
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+main {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+article {
+	background-color: $main-lighter;
+	width: 75%;
+	float: left;
+	h1 {
+		color: $main-darker;
+	}
+}
+aside {
+	background-color: $main-dark;
+	width: 25%;
+	float: right;
+}
+footer {
+	background-color: $main-darker;
+	p {
+		margin: 0;
+	}
+}
+header, article, aside, footer {
+	// padding: 0 0 $pad $pad;
+	// margin: $mar;
+}
+
+
+
+
+
+

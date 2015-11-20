@@ -1,0 +1,127 @@
+/* put your scss here */
+
+@import "vars";
+@import "test";
+
+body {
+	margin: 0;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: $black-lightest;
+	line-height: 2;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+#{headings(1,6)} {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: $black-light;
+	line-height: 1.50;
+	margin-bottom: 50px;
+}
+h1 {
+	font-size: 250%;
+}
+p {
+	margin-top: 0;
+}
+header {
+	background-color: $white;
+}
+nav {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		align-items: stretch;
+		li, li a {display: flex;}
+		li a {align-items: center;}
+		li:hover {background-color: $white-lighter;}
+	}
+	a {
+		text-decoration: none;
+		color: inherit;
+		padding: 10px;
+	}
+}
+
+div.intro {
+	background: {
+		attachment: fixed;
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+	padding: 200px 0 300px;
+	hgroup {
+		width: 75vw;
+	}
+	h1, h2 {
+		display: inline-flex;
+		background-color: $white;
+		padding: 10px 20px;
+	}
+}
+
+section.content {
+	padding: 100px 5vw;
+}
+
+
+section {
+	&#desktop {
+		display: flex;
+		flex-direction: column;
+		img {
+			float: right;
+			margin: 0 0 50px 50px;
+			width: 35vw;
+			border-radius: 20px;
+			border: 20px solid $white-lighter;
+		}
+	}
+	&#featured {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+	&#agency {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	&#map {
+		width: 100%;
+		height: 400px;
+	}
+}
+
+footer {
+	color: $white-darkest;
+	background-color: $black-lightest;
+	padding: 20px 5vw;
+	p {
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

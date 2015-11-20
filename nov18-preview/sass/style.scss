@@ -1,0 +1,134 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+$white: hsla(0, 0%, 96%, 1);
+$whitelite: lighten($white, 10);
+$whitedark: darken($white, 10);
+
+$black: hsla(0, 0%, 9%, 1);
+$blacklite: lighten($black, 20);
+$blackdark: darken($black, 10);
+$blacktrans: transparentize($blackdark, .2);
+
+$key: hsla(224, 18%, 25%, 1);
+
+@mixin border($color, $radius){
+	border: {
+		width: 1px;
+		style: solid;
+		color: $whitedark;
+		radius: 4px;
+	}
+}
+
+.btn {
+	display: inline-block;
+	@include border(darken($whitedark, 10), 4px);
+	background-color: $whitedark;
+	padding: 5px 10px;
+	&.btn-more {
+		background-color: invert($key);
+		border-color: darken(invert($key), 10);
+		color: $blacklite;
+		// &:hover {
+		// 	background-color: darken(invert($key), 10);
+		// 	border-color: darken(invert($key), 20);
+		// 	color: $whitelite;
+		// }
+	}
+}
+
+body {
+	font: {
+		size: 100%;
+		weight: 200;
+		family: sans-serif;
+	}
+	line-height: 1.35;
+	background-color: $whitedark;
+}
+main {
+	width: 80vw;
+	margin: 0 auto;
+	padding: 50px 25px;
+	background-color: $key;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+.figure {
+	width: 40%;
+	background-color: $white;
+	font-size: .9em;
+	margin-bottom: 25px;
+	.figimage {
+		position: relative;
+		display: flex;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		div {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $blacktrans;
+			color: $whitelite;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			p {
+				width: 85%;
+				text-align: justify;
+				&::before {
+					display:block;
+					font:normal normal normal 14px/1 FontAwesome;
+					font-size:inherit;
+					text-rendering:auto;
+					-webkit-font-smoothing:antialiased;
+					-moz-osx-font-smoothing:grayscale;
+					content: '\f067';
+					font-size: 2.5em;
+					line-height: 1.5;
+				}
+			}
+
+		}
+	}
+	.figcontent {
+		padding: 20px 10px;
+	}
+	&:nth-child(1){
+		.figimage p::before {
+			content: '\f206';
+		}
+	}
+	&:nth-child(2){
+		.figimage p::before {
+			content: '\f207';
+		}
+	}
+	&:nth-child(3){
+		.figimage p::before {
+			content: '\f072';
+		}
+	}
+	&:nth-child(4){
+		.figimage p::before {
+			content: '\f239';
+		}
+	}
+}
+
+
+
+
+
+

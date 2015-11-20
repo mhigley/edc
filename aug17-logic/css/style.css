@@ -1,0 +1,78 @@
+/* put your scss here */
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 1px solid gray;
+  background-color: lightgray;
+  font-size: 40px;
+}
+.btn.btn-sm {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.btn.btn-lg {
+  padding: 40px 80px;
+  font-size: 80px;
+}
+.btn.btn-pill {
+  height: 80px;
+  padding: 0;
+  border-radius: 40px;
+}
+
+section {
+  background-color: #888;
+  color: #101010;
+  /* background-color: $section-bg;
+  @if $hue >= 300deg {
+  	color: white;
+  }@else if $hue >= 200deg and $hue <= 300deg{
+  	color: yellow;
+  }@else{
+  	color: black;
+  } */
+  /* font-size: $hue;
+  background-color: $section-bg;
+  @if $section-bg == yellow {
+  	color: black;
+  }@else if $section-bg == red {
+  	color: green;
+  }@else{
+  	color: white;
+  } */
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  line-height: 3;
+  list-style: none;
+  padding-left: 20px;
+}
+aside li:nth-of-type(5) {
+  background-color: #97d279;
+  border-right: 10px solid #6abf40;
+}
+aside li:nth-of-type(6) {
+  background-color: #79d279;
+  border-right: 10px solid #40bf40;
+}
+aside li:nth-of-type(7) {
+  background-color: #79d297;
+  border-right: 10px solid #40bf6a;
+}
+aside li:nth-of-type(8) {
+  background-color: #79d2b5;
+  border-right: 10px solid #40bf95;
+}
+aside li:nth-of-type(9) {
+  background-color: #79d2d2;
+  border-right: 10px solid #40bfbf;
+}
+aside li:nth-of-type(10) {
+  background-color: #79b5d2;
+  border-right: 10px solid #4095bf;
+}

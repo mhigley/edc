@@ -1,0 +1,25 @@
+$clrhue: (360 / 11);
+
+body {
+	margin: 0;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+main div {
+	width: 15vw;
+	height: 15vw;
+}
+
+@for $i from 1 through 11 {
+	$clr: ($i * $clrhue) - $clrhue;
+	div:nth-child(#{$i}) {
+		background-color: hsla($clr, 50%, 50%, 1);
+	}
+}

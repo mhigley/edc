@@ -1,0 +1,44 @@
+body {
+	/*background-color: blue;*/
+}
+ul {
+	
+	/*padding: 5px;*/
+	float: right;
+	margin: 0;
+}
+nav {
+	/*background-color: hsla(0, 0%, 0%, .5);*/
+	border-radius: 5px;
+	background-image: linear-gradient(to top, hsla(0, 0%, 0%, .75) 20%, hsla(0, 0%, 0%, .5) 80%, hsla(0, 0%, 0%, .25));
+}
+nav::after {
+	content: "";
+	display: block;
+	clear: both;
+	/*background-color: red;
+	height: 1px;*/
+}
+ul li {
+	display: inline-block;
+	width: 65px;
+}
+ul li a {
+	display: block;
+	padding: 20px 10px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border-radius: 50%;
+	text-shadow: 0 -1px 1px black, 0 1px 1px white;
+}
+ul li a:hover {
+	/*background-color: hsla(0, 0%, 0%, .25);*/
+	background-image: linear-gradient(to top, hsla(200, 50%, 40%, .60) 30%, hsla(200, 50%, 40%, .40) 70%, hsla(200, 50%, 40%, .20));
+}
+
+
+
+
+
+

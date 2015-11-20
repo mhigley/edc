@@ -1,0 +1,64 @@
+/* sass goes here */
+$unitless: 13;
+$num: 25em;
+$str: 'This is a string of text';
+$unit: 25px;
+$clr: hsla(220, 30%, 60%, .5);
+$width: 20vw;
+
+@debug comparable($unit, $unitless);
+
+
+$hue: 300;
+$sat: 60%;
+$lum: 40%;
+$alpha: .5;
+
+$color: hsla($hue, $sat, $lum, $alpha);
+$text: darken($color, 30);
+
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin theme($bgc, $tc, $fs){
+	@if ( unit($fs) != 'px' ) {
+		@if( unit($fs) == 'em' ){
+			@warn 'You provided an em value';
+		}
+		@if( unit($fs) == 'vw' ){
+			@warn 'You provided a vw value';
+		}
+		@if( unitless($fs) ){
+			@warn 'Please provide a unit of measurement';
+		}
+	}
+	@else {
+		font-size: $fs;
+		background-color: $bgc;
+		color: $tc;
+	}
+}
+
+body {
+	@include theme(black, pink, $unit);	
+}
+
+/*
+Directives:
+@mixin - advanced placeholders (accepts arguments)
+@media - media queries
+@include - @mixin
+@import - importing css stylesheet
+@extend - % placeholders
+@debug
+
+@warn
+@error
+*/
+
+

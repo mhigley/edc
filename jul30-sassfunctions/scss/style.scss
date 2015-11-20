@@ -1,0 +1,60 @@
+/* put your scss here */
+
+@import "test";
+
+@function headings( $from:1, $to:6 ){
+	@if $from == $to {
+		@return 'h#{$from}';
+	} @else {
+		@return 'h#{$from},' + headings( $from+1, $to );
+	}
+}
+
+#{headings(1, 6)} {
+	color: red;
+}
+
+#{headings(4, 6)} {
+	font-size: 40px;
+}
+
+#{headings(2, 4)} {
+	transform: rotate(180deg);
+}
+
+body {
+	//transform: rotate(180deg);
+}
+
+a {
+	display: block;
+	width: 200px;
+	height: 50px;
+	background-color: hsla(200, 40%, 60%, 1);
+	color: white;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	border-color: darken(hsla(200, 40%, 60%, 1), 20);
+	// &:first-of-type {@if 1 + 1 == 2 {border: {width: 2px;style: solid;}}}
+	// &:last-of-type {@if 5 > 3 {border: {width: 5px;style: dotted;}}}
+
+	i {
+		margin: 0 10px;
+	}
+
+	&:first-of-type{
+		@include arrow("down", gray);
+	}
+	&:nth-of-type(2){
+		@include arrow("up", orange);
+	}
+	&:nth-of-type(3){
+		@include arrow("left", red);
+	}
+	&:last-of-type{
+		@include arrow("right", teal);
+	}
+}

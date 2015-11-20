@@ -1,0 +1,62 @@
+%btn-basics {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: $color-blue;
+	border-radius: 4px;
+	border: 1px solid invert(darken($color-blue, 5));
+}
+
+%background {
+	padding: 20px;
+	background-color: lighten($color-black, 85);
+}
+
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+header {
+	@extend %background;
+	margin-bottom: 40px;
+}
+
+nav {
+	@extend %clearfix;
+}
+
+.btn {
+	@extend %btn-basics;
+	&.btn-1 {
+		border-width: 1px;
+		font-size: 16px;
+	}
+	&.btn-2 {
+		border-width: 2px;
+		font-size: 20px;
+	}
+	&.btn-3 {
+		border-width: 3px;
+		font-size: 24px;
+	}
+	&.btn-4 {
+		border-width: 4px;
+		font-size: 28px;
+	}
+}
+
+article {
+	@extend %background;
+	margin: 20px 0;
+	h1 {
+		margin: 0 0 10px;
+	}
+}
+
+footer {
+	@extend %background;
+	margin-top: 40px;
+}

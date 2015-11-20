@@ -1,0 +1,49 @@
+header {
+  background-color: red;
+}
+
+main::before, main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article {
+  background-color: yellow;
+  width: 75%;
+  float: left;
+}
+
+aside {
+  background-color: blue;
+  width: 25%;
+  float: right;
+}
+
+footer {
+  background-color: green;
+}
+
+@media screen and (max-width: 589px) {
+  body {
+    background-color: purple;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 410px) {
+  body {
+    background-color: teal;
+  }
+}
+@media print {
+  * {
+    background-color: transparent !important;
+  }
+}

@@ -1,0 +1,95 @@
+$grad: hsla(0, 0%, 0%, .65);
+$character-list: starlord gamora drax rocket groot ronan nebula korath;
+
+@each $character in $character-list {
+	$i: index($character-list, $character);
+	section:nth-child(#{$i}){
+		&::before {
+			content: '#{$character}';
+			
+		}
+	}
+}
+section::before {
+	display: block;
+	width: 100%;
+	color: white;
+	font: {
+		size: 2em;
+		weight: 400;
+		family: serif;
+	}
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: hsla(0, 0%, 0%, .25);
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+nav {
+	color: white;
+	padding-top: 10vw;
+	background: {
+		image: linear-gradient($grad, $grad), url('../img/guardians.jpg');
+		position: center;
+		size: cover;
+	}
+	h1 {
+		text-align: center;
+		font-size: 4em;
+		margin-bottom: 10vw;
+	}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		a {
+			display: block;
+			padding: 20px;
+		}
+	}
+}
+
+main {
+	div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	img {
+		width: 25%;
+		height: auto;
+		float: left;
+	}
+	section {
+		box-sizing: border-box;
+		width: 50%;
+		padding: 20px;
+	}
+	section:nth-child(3n+1){
+		width: 100%;
+		background-color: hsla(0, 0%, 0%, .05);
+	}
+	section:nth-child(3n+2){
+		border-right: 1px solid hsla(0, 0%, 0%, .10);
+		img {
+			float: right;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

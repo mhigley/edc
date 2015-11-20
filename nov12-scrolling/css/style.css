@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  background-color: whitesmoke;
+  color: #171717;
+  padding: 10vw 5vw;
+}
+
+header {
+  background-color: #171717;
+  color: whitesmoke;
+}
+header nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav img {
+  transition: all 500ms ease-in-out;
+}
+header nav a {
+  display: inherit;
+  margin: 0 auto 0 0;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+header nav ul {
+  display: inherit;
+}
+header nav ul li, header nav ul a {
+  display: inherit;
+}
+header nav ul a {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+header.fixie {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header.fixie img {
+  width: 65px;
+  height: 65px;
+  -webkit-animation: wiggle 500ms 2;
+          animation: wiggle 500ms 2;
+}
+
+main {
+  background-color: #e8e8e8;
+  padding: inherit;
+}
+
+@-webkit-keyframes wiggle {
+  25% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  50% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  75% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  25% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  50% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  75% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}

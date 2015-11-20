@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+#intro div {
+  box-sizing: border-box;
+}
+
+#intro::before, #intro::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: 'Neue Haas Unica Pro', 'Questrial', sans-serif;
+  color: #404040;
+  line-height: 1.75;
+  padding-bottom: 100px;
+}
+
+.container {
+  padding: 50px 5% 50px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+p {
+  color: rgba(64, 64, 64, 0.6);
+}
+
+hr {
+  height: 1px;
+  background-color: #e0e0e0;
+  border: none;
+}
+
+a {
+  color: #2056ac;
+}
+
+.btn {
+  background-color: #66acd1;
+  color: #fafafa;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+.hero {
+  height: 500px;
+  background-image: url("../img/banner.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#welcome {
+  text-align: center;
+}
+
+#intro {
+  text-align: center;
+}
+#intro div {
+  width: 33.3333%;
+  float: left;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #intro div {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #intro div .btn {
+    display: block;
+  }
+}

@@ -1,0 +1,89 @@
+$green: hsl(175, 59%, 65%);
+$pink: hsl(1, 71%, 77%);
+$yellow: hsl(44, 88%, 84%);
+$red: hsl(17, 81%, 69%);
+$orange: hsl(44, 86%, 74%);
+$purple: hsl(331, 64%, 77%);
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Neue Haas Unica Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+h1 {
+	font-weight: 200;
+	text-align: center;
+}
+
+.green {background-color: $green;}
+.pink {background-color: $pink;}
+.yellow {background-color: $yellow;}
+.red {background-color: $red;}
+.orange {background-color: $orange;}
+.purple {background-color: $purple;}
+
+$margin: 5px * 2;
+
+div {
+	// padding: 5px;
+	margin: 5px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	&::before {
+		display: inline-block;
+		text-align: center;
+		padding: 20px 0;
+	}
+}
+main {
+	display: flex;
+	align-items: flex-start;
+	.ag1, .ag3 {flex: 1;}
+	.ag2 {flex: 3;}
+}
+
+[class^='ag']{
+	> div {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.ag2 {
+	display: flex;
+	flex-direction: column;
+	.ag4, .ag5 {
+		width: calc(50% - #{$margin});
+	}
+	.ag6 {
+		width: calc(33.3333% - #{$margin});
+	}
+	.ag7 {
+		width: calc(66.6666% - #{$margin});
+		.ag8, .ag9 {
+			width: calc(50% - #{$margin});
+		}
+		.ag10 {
+			width: calc(100% - #{$margin});
+		}
+	}
+}
+
+
+.ag1::before {content: "AG1";}
+.ag2::before {content: "AG2";}
+.ag3::before {content: "AG3";}
+.ag4::before {content: "AG4";}
+.ag5::before {content: "AG5";}
+.ag6::before {content: "AG6";}
+.ag7::before {content: "AG7";}
+.ag8::before {content: "AG8";}
+.ag9::before {content: "AG9";}
+.ag10::before {content: "AG10";}
+
+

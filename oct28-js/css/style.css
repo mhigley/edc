@@ -1,0 +1,11 @@
+div:nth-child(1) {
+  width: 2em;
+}
+
+div:nth-child(2) {
+  width: 4em;
+}
+
+div:nth-child(3) {
+  width: 6em;
+}

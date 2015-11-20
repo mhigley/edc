@@ -1,0 +1,150 @@
+/* put your scss here */
+/*
+@import is for importing partial e.g.: _*.scss
+
+@extend is for inheriting from placeholder e.g.: %*{}
+
+@include is for mixins e.g.: @mixin *($x, $y, $z){}
+
+@function padding-calc($some-num, $another-num){
+	@return $some-num + $another-num;
+}
+*/
+header h1 {
+  border: 2px dashed teal;
+}
+
+nav ul {
+  border: 5px solid green;
+}
+
+header::before, header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  background-color: #ededed;
+  padding: 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ol a, ul a {
+  color: #141414;
+}
+
+a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 38px;
+  margin: 0;
+}
+
+header {
+  background-color: rgba(255, 255, 0, 0.25);
+  border: 1px solid #006700;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+article {
+  height: 500px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.btn.btn-1 {
+  padding: 10px 20px;
+  background-color: #66aacc;
+  border-radius: 4px;
+  border: 8px solid #ac6039;
+  font-size: 30px;
+}
+.btn.btn-2 {
+  padding: 10px 20px;
+  background-color: #66aacc;
+  border-radius: 4px;
+  border: 8px solid #ac6039;
+  font-size: 30px;
+}
+.btn.btn-3 {
+  padding: 10px 20px;
+  background-color: #66aacc;
+  border-radius: 4px;
+  border: 3px solid #ac6039;
+  font-size: 24px;
+}
+.btn.btn-4 {
+  padding: 10px 20px;
+  background-color: #66aacc;
+  border-radius: 4px;
+  border: 4px solid #ac6039;
+  font-size: 28px;
+}
+
+article {
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+article:nth-of-type(1) {
+  background-image: url("http://dreamatico.com/data_images/car/car-6.jpg");
+}
+
+article:nth-of-type(2) {
+  background-image: url("http://melleum.com/data/uploads/9/291424-cars.jpg");
+}
+
+blockquote {
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  font-style: italic;
+  font-variant: small-caps;
+  background-position: left top;
+  background-image: url("http://images.thecarconnection.com/lrg/jaguar-c-x75-concept-car_100431735_l.jpg\a 			");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav a {
+  float: left;
+  color: #141414;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 38px;
+}
+
+header {
+  padding: 0 10%;
+}

@@ -1,0 +1,142 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+$white: hsla(0, 0%, 96%, 1);
+$whitelite: lighten($white, 10);
+$whitedark: darken($white, 20);
+$black: hsla(0, 0%, 9%, 1);
+$blacklite: lighten($black, 70);
+$blackdark: darken($black, 10);
+
+$key: hsla(190, 50%, 60%, 1);
+$keylite: lighten($key, 10);
+$keydark: darken($key, 10);
+$comp: complement($key);
+$complite: lighten($comp, 10);
+$compdark: darken($comp, 10);
+
+body {
+	font: {
+		family: 'Fira Sans', sans-serif;
+		weight: 200;
+	}
+	color: $black;
+	line-height: 1.5;
+}
+
+input {
+	font: inherit;
+	color: $whitelite;
+	padding: 5px 20px;
+	box-sizing: border-box;
+	line-height: inherit;
+	border: {
+		width: 1px;
+		style: solid;
+		color: $blacklite;
+		radius: 4px;
+	}
+	&[type='text']{
+		padding: 5px;
+		color: $black;
+
+	}
+	&[type='reset']{
+		background-image: linear-gradient($complite, $comp);
+		border-color: $compdark;
+		cursor: pointer;
+		&:hover {
+			background-image: linear-gradient(darken($complite, 5), darken($comp, 5));
+			border-color: darken($compdark, 5);
+		}
+	}
+	&[type='submit']{
+		background-image: linear-gradient($keylite, $key);
+		border-color: $keydark;
+		cursor: pointer;
+		&:hover {
+			background-image: linear-gradient(darken($keylite, 5), darken($key, 5));
+			border-color: darken($keydark, 5);
+		}
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font: {
+		family: 'Klinic Slab', serif;
+		weight: 400;
+	}
+}
+
+
+section {
+	background-image: linear-gradient($white, $white);
+	padding: 20px;
+	border: {
+		width: 1px;
+		style: solid;
+		color: $blacklite;
+		radius: 10px;
+	}
+	width: 75%;
+	margin: 10vw auto;
+}
+header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0 0 20px 0;
+}
+#catDisp {
+	width: 100%;
+	min-height: 30vw;
+	background-color: $whitelite;
+	border: {
+		width: 1px;
+		style: solid;
+		color: $blacklite;
+		radius: 10px;
+	}
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	img {
+		width: 50px;
+		height: auto;
+	}
+}
+#catPanel {
+	padding: 20px 0 0 0;
+	h2 {
+		font-size: 1.10em;
+		opacity: 0.5;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		input {
+			margin: 10px 0 10px 0;
+			background-color: $whitelite;
+		}
+		input[type='text']{
+			width: 100%;
+			cursor: text;
+			background-color: $whitelite;
+			&:disabled {
+				cursor: not-allowed;
+				background-color: darken($white, 5);
+			}
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,30 @@
+$hue: 100;
+$sat: 50;
+$lum: 50;
+$alpha: 1;
+$backgroundcolor: hsla($hue, $sat, $lum, $alpha);
+
+//@error "Sorry, but `#{$hue}` is not a valid value for $hue";
+//$color: hsla(220, 50%, 20%, 1);
+//@debug $color;
+//@warn $color;
+//@warn 'This is a warning';
+//@error 'This is an error';
+
+@mixin border($width){
+	@if($width != 'px'){
+		@debug 'Please us pixel values for the border width';
+	}
+	@else{
+		border-width: $width;
+		border-style: solid;
+		border-color: red;
+	}
+}
+
+main div:first-child{
+	width: 100px;
+	height: 100px;
+	background-color: transparentize(red, .75);
+	@include border(2rem);
+}

@@ -1,0 +1,211 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300);
+
+$header-grad: hsla(0, 0%, 0%, .65);
+$gray: hsla(214, 9%, 31%, 1);
+$white: hsla(0, 0%, 100%, 1);
+$key-color: hsla(9, 69%, 64%, 1);
+
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+%content {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+/* GLOBAL styles start */
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+h2 {
+	text-align: center;
+	margin-bottom: .25em;
+}
+h2 + p {
+	text-align: center;
+	font-size: 1.35em;
+	font-weight: 300;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px 25px;
+	text-align: center;
+	color: $white;
+	text-decoration: none;
+	font-weight: 600;
+	background-color: $key-color;
+	&.btn-info {
+		background-color: $gray;
+	}
+}
+
+/* GLOBAL styles end */
+
+
+/* HEADER styles start */
+header {
+	background: {
+		image: linear-gradient($header-grad, $header-grad), url('../img/banner.jpg');
+		size: auto auto, cover;
+		position: center, center;
+		repeat: no-repeat, no-repeat;
+	}
+	color: $white;
+	@extend %content;
+	padding-bottom: 50px;
+	nav {
+		background-color: $gray;
+		position: relative;
+		@extend %clearfix;
+		margin-bottom: 50px;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: url('../img/bg01.png');
+			opacity: .25;
+		}
+		h1 {
+			float: left;
+			position: relative;
+			z-index: 100;
+			background-color: $key-color;
+			padding: 0 25px;
+		}
+		ul {
+			position: relative;
+			z-index: 100;
+			float: right;
+		}
+	}
+	li {
+		display: inline-block;
+	}
+	h1, li {
+		font-size: 1em;
+		line-height: 2em;
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+/* HEADER styles end */
+
+
+/* PROMO-SILOS styles start */
+#promo-silos {
+	@extend %content;
+	> div {
+		@extend %clearfix;
+		text-align: center;
+		padding: 25px 0;
+	}
+	> div:first-child > div {
+		box-sizing: border-box;
+		float: left;
+		width: 33%;
+		border-right: 1px solid lightgray;
+		padding: 0 20px;
+		&:last-child {
+			border: none;
+		}
+	}
+	> div:last-child > div {
+		float: left;
+		width: 50%;
+	}
+	> div > div:first-child a {
+		float: right;
+		margin-right: 10px;
+	}
+	> div > div:last-child a {
+		float: left;
+		margin-left: 10px;
+	}
+	i {
+		display: block;
+		margin: 0 auto;
+		width: 60px;
+		height: 50px;
+		line-height: 60px;
+		text-align: center;
+		position: relative;
+		color: white;
+		&::before {
+			position: relative;
+			z-index: 100;
+		}
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-color: transparent transparent $key-color transparent;
+			border-style: solid;
+			border-width: 0px 30px 50px 30px;
+		}
+	}
+
+	.btn {
+		display: block;
+		width: 50%;
+	}
+}
+/* PROMO-SILOS styles end */
+
+
+/* SERVICES styles start */
+#services {
+	background-image: url('../img/bg01.png');
+	@extend %content;
+	ul {
+		@extend %clearfix;
+	}
+	li {
+		width: 30%;
+		margin-right: 5%;
+		float: left;
+		&:nth-child(3n){
+			margin: 0;
+		}
+		img {
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			padding: 10px;
+			background-color: $white;
+		}
+	}
+}
+/* SERVICES styles end */
+
+
+
+
+
+
+
+

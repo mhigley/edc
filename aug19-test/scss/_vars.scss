@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300|Josefin+Slab:400,100,300,600,700);
+
+$white: hsla(0, 0%, 92%, 1);
+$white-light: lighten($white, 2);
+$white-lighter: lighten($white, 4);
+$white-lightest: lighten($white, 8);
+$white-dark: darken($white, 5);
+$white-darker: darken($white, 10);
+$white-darkest: darken($white, 15);
+$black: hsla(0, 0%, 8%, 1);
+$black-light: lighten($black, 5);
+$black-lighter: lighten($black, 10);
+$black-lightest: lighten($black, 15);
+$black-dark: darken($black, 2);
+$black-darker: darken($black, 4);
+$black-darkest: darken($black, 8);
+
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}

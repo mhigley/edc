@@ -1,0 +1,22 @@
+div {box-sizing: border-box;}
+div.row {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+div[class^="col-"]{http://templated.co/items/demos/synchronous/index.html#
+	padding: 10px;
+	float: left;
+}
+div.col-3{
+	width: 25%;
+}
+div.col-6 {
+	width: 50%;
+}
+
+div.col-7{
+	width: calc(100% / 7);
+}

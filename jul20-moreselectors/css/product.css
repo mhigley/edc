@@ -1,0 +1,52 @@
+body {
+	background-image: url("../img/7192662-original-e1316195256584.jpeg");
+	color: black;
+}
+h1 {
+	font-family: "Wire One", "Neue Haas Unica Pro", "Helvetica Neue", Arial, sans-serif;
+}
+section {
+	display: relative;
+}
+#background {
+	position: absolute;
+	width: 283px;
+	height: 304px;
+	margin: 21px 15px;
+	background-color: lightblue;
+	border-top-left-radius: 50% 80px;
+	border-top-right-radius: 50% 80px;
+}
+#comb, #comb::before, #comb::after {
+	box-sizing: border-box;
+}
+#comb {
+	width: 283px;
+	height: 304px;
+	margin: 51px 15px;
+	position: relative;
+	overflow: hidden;
+}
+#comb::before {
+	content: "";
+	display: block;
+	width: 460px;
+	height: 500px;
+	border-radius: 50%;
+	position: absolute;
+	left: calc(50% - 230px);
+	border: 20px solid hsla(29, 61%, 15%, 1);
+}
+#comb::after {
+	content: "";
+	display: block;
+	width: 283px;
+	height: 251px;
+	position: absolute;
+	bottom: 0;
+	border-width: 0 20px 20px 20px;
+	border-style: solid;
+	border-color: hsla(29, 61%, 15%, 1);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}

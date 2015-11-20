@@ -1,0 +1,16 @@
+$main-black: hsla(0, 0%, 9%, 1);
+$main-gray: hsla(0, 0%, 25%, 1);
+$main-white: hsla(0, 0%, 91%, 1);
+$main-blue: hsla(240, 30%, 60%, 1);
+
+body {
+	background-color: $main-gray;
+	color: $main-white;
+	font: {
+		family: 'Neue Haas Unica Pro';
+		size: 18px;
+		weight: 100;
+	}
+	margin: 0;
+
+}

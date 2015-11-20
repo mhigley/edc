@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sun Rockets</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+	<header>
+		<div class="container">
+			<a id="logo" href="index.html">
+				<h1>Sun Rockets</h1>
+				<h2>Atv Club</h2>
+				<h3>Since 1990</h3>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">membership</a></li>
+					<li><a href="#">photo gallery</a></li>
+					<li><a href="#">contacts</a></li>
+				</ul>
+			</nav>
+			<br style="clear: both;">
+		</div>
+	</header>
+	<div id="hero" class="all-centered">
+		<h2>Get Enjoyable ATV Riding Experience!</h2>
+		<a href="#">Join the Club!</a>
+	</div>
+	<section id="welcome" class="section section-gray all-centered">
+		<div class="container">
+			<h3>Welcome to the Club!</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem a, expedita mollitia quasi, fuga repellat, nostrum assumenda deleniti harum tenetur nulla dicta! Id soluta sint quibusdam fuga blanditiis sequi, aperiam!</p>
+		</div>
+	</section>
+	<section id="events" class="section section-white all-centered">
+		<div class="container">
+			<h3>Latest Events</h3>
+
+			<div>
+				<img src="img/page-1_img-01.jpg" height="530" width="195" alt="">
+				<img src="img/page-1_img-02.jpg" height="530" width="195" alt="">
+				<img src="img/page-1_img-03.jpg" height="530" width="195" alt="">
+				<img src="img/page-1_img-04.jpg" height="530" width="195" alt="">
+				<img src="img/page-1_img-05.jpg" height="530" width="195" alt="">
+				<img src="img/page-1_img-06.jpg" height="530" width="195" alt="">
+				<br style="clear: both;">
+			</div>
+		</div>
+	</section>
+
+	<section id="review" class="section section-orange">
+	    <!-- pseudo before goes here -->
+		<h3>ATV Reviews</h3>
+		<div>
+			<p>2014 FourTrax Recon</p>
+			<ul>
+				<li>229cc air-cooled OHV longitudinally mounted single-cylinder four-stroke engine</li>
+				<li>Smaller engine and a more compact footprint</li>
+			</ul>
+			<a href="#">read more</a>
+		</div>
+		<img src="img/page-1_img-07.png" alt="atv">
+		<!-- pseudo after goes here -->
+	</section>
+
+	<section id="blog" class="section section-white all-centered">
+		<div class="container">
+			<h3>From the Blog</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est hic architecto doloribus rem, temporibus rerum quisquam, adipisci tempora tempore expedita sit ducimus, debitis! Similique, repellat officia debitis, corrupti architecto accusamus!</p>
+			<ul>
+				<li>
+					<img src="img/page-1_img-08.jpg" width="168" height="168" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, fugit, repudiandae distinctio neque consectetur officia. Iure recusandae quo aperiam quisquam pariatur inventore soluta, culpa doloribus illo modi quibusdam quasi architecto.</p>
+				</li>
+				<li>
+					<img src="img/page-1_img-09.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque distinctio dignissimos tempore quaerat beatae nihil totam illo, impedit amet nisi sunt harum recusandae atque consectetur praesentium sit repudiandae saepe deserunt.</p>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<img src="img/page-1_img-10.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eaque numquam similique quis eveniet debitis quisquam suscipit vel modi aperiam voluptates reprehenderit minus deserunt illum, labore odit nemo aspernatur. Voluptatem!</p>
+				</li>
+				<li>
+					<img src="img/page-1_img-11.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, itaque quas nulla accusamus. Tempore aperiam ex ab temporibus, repellendus perferendis, quae a non cumque sint ullam, vitae at ipsa magni?</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<style>
+		article {
+			width: 300px;
+			height: 300px;
+			position: relative;
+		}
+		div {
+			position: absolute;
+			
+			-webkit-filter: drop-shadow(0px 0px 3px black);
+			filter: drop-shadow(0px 0px 3px black);
+		}
+		#one {
+			width: 100%;
+			height: 100%;
+			background-color: transparent;
+			border: 30px solid red;
+			border-radius: 50%;
+			left: 0;
+			top: 0;
+			z-index: 3;
+		}
+		#two {
+			width: 75%;
+			height: 75%;
+			background-color: transparent;
+			border: 30px solid blue;
+			border-radius: 50%;
+			left: calc(30px * 1);
+			top: calc(30px * 1);
+			z-index: 2;
+		}
+		#three {
+			width: 50%;
+			height: 50%;
+			background-color: transparent;
+			border: 30px solid green;
+			border-radius: 50%;
+			left: calc(30px * 2);
+			top: calc(30px * 2);
+			z-index: 1;
+		}
+	</style>
+	<article>
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+	</article>
+		
+	</body>
+</html>

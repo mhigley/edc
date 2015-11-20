@@ -1,0 +1,22 @@
+@for $i from 1 through 3 {
+	div:nth-child(#{$i}){
+		width: 2em * $i;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

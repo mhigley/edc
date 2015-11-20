@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+}
+
+header{
+	background-color: hsla(150, 30%, 60%, 1);
+	height: 100px;
+}
+article{
+	background-color: hsla(200, 30%, 60%, 1);
+	/*height: 250px;*/
+	width: 75%;
+	float: left;
+}
+aside{
+	background-color: hsla(250, 30%, 60%, 1);
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+footer {
+	background-color: hsla(300, 30%, 60%, 1);
+	height: 100px;
+}
+
+
+
+

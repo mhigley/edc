@@ -1,0 +1,72 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	div {
+		position: relative;
+		box-sizing: border-box;
+		width: 33.3333%;
+		padding: 10px 3em 10px 10px ;
+		font-family: sans-serif;
+		img {
+			float: left;
+			margin-right: 10px;
+		}
+		span {
+			font-size: 1.5em;
+			display: block;
+			font-weight: 700;
+		}
+		overflow: hidden;
+	}
+	div:nth-of-type(odd){
+		background-color: hsla(0, 0%, 0%, .10);
+	}
+	div:nth-of-type(even){
+		background-color: hsla(0, 0%, 0%, .05);
+	}
+	div::before {
+		$circ: 6em;
+		content: '';
+		display: block;
+		width: $circ;
+		height: $circ;
+		border-radius: 100%;
+		background-color: white;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate3d( ($circ / 2), -($circ / 2), 0);
+
+	}
+	div::after {
+		$num: 1.25em;
+		display: block;
+		position: absolute;
+		//background-color: hsla(0, 50%, 50%, .10);
+		width: $num;
+		height: $num;
+		top: 0;
+		right: 0;
+		color: hsla(0, 0%, 9%, 1);
+		text-align: center;
+		line-height: $num;
+		font-weight: 100;
+		font-size: 1.75em;
+	}
+	$clr: (360 / 40);
+	@for $i from 1 through 40 {
+		$hue: ($clr * $i) - $clr; 
+		div {
+			background-color: hsla($hue, 30%, 60%, .25);
+		}
+		div:nth-child(#{$i})::after{
+			content: '#{$i}';
+		}
+	}
+}

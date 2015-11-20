@@ -1,0 +1,137 @@
+/* GLOBAL STYLES */
+html {
+	background-color: #171717;
+}
+body {
+	margin: 0;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	font-weight: 400;
+}
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+p {
+	font-weight: 300;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.spacing {
+	padding: 0 5vw;
+}
+
+
+
+.additional-info li {
+	color: red;
+}
+
+.section1, .section3 {
+	
+}
+
+article section:nth-of-type(odd){
+	background-color: lightblue;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+/* HEADER STYLES */
+header {
+	padding: 20px 0;
+	background-color: #a0a0a0;
+}
+
+
+
+
+
+
+
+
+
+
+/* MAIN STYLES */
+main {
+	padding: 50px 0;
+	background-color: #f0f0f0;
+}
+main::before, main::after,
+.spacing::before, .spacing::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+/* ARTICLE STYLES */
+article {
+	box-sizing: border-box;
+	width: 75%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* ASIDE STYLES */
+aside {
+	box-sizing: border-box;
+	width: 25%;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER STYLES */
+footer {
+	padding: 20px 0;
+	background-color: #171717;
+	color: #eaeaea;
+	font-size: 80%;
+}
+footer p {
+	float: left;
+}
+footer nav {
+	float: right;
+}
+footer ul {
+	float: left;
+	margin: 0 20px;
+}

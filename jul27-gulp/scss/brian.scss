@@ -1,0 +1,67 @@
+$main: hsl(194, 82%, 53%);
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+header {
+	section {
+		padding: 0 10%;
+		background-color: $main;
+		ul:first-child {
+			float: left;
+		}
+		ul:last-child {
+			float: right;
+		}
+		li {
+			display: inline-block;
+		}
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+	nav {
+		padding: 0 10%;
+		& > a {
+			float: left;
+		}
+		ul {
+			float: right;
+		}
+		li {
+			display: inline-block;
+		}
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+}
+
+.hero {
+	padding: 0 10%;
+}
+section {
+	padding: 0 10%;
+	&.products {
+		div {
+			width: (100% / 6);
+			float: left;
+			text-align: center;
+		}
+		img {
+			border-radius: 50%;
+			padding: 5px;
+			border: 1px solid lightgray;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#" id="login"><i class="fa fa-lock"></i></a>
+					<ul id="loginBox">
+						<li>
+							<form>
+								<input type="text" id="username" placeholder="username">
+								<input type="password" id="password" placeholder="password">
+								<button type="button" onclick="userLogin()">Submit</button>
+							</form>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<a href="#" onclick="getInfo()">Click Here</a>
+
+		<ul>
+			<li id="name"></li>
+			<li id="address"></li>
+			<li id="cityStateZip"></li>
+			<li id="getter"><p>Here is <a href="#">some</a> text</p></li>
+		</ul>
+	</main>
+
+
+	<script src="js/script.js"></script>
+	<script src="js/lesson.js"></script>
+</body>
+</html>

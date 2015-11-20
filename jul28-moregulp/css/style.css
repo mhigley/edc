@@ -1,0 +1,114 @@
+/* put your scss here */
+main::before, aside::before, main::after, aside::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bubble, .post, .rightcol {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+main {
+  /*
+  &::before,
+  &::after {
+  	content: "";
+  	display: block;
+  	clear: both;
+  }
+  */
+}
+
+aside {
+  width: 200px;
+  float: left;
+}
+
+article {
+  width: calc( 100% - 400px );
+  float: left;
+}
+
+body {
+  background-color: teal;
+}
+
+h1 {
+  color: #00e6e6;
+}
+
+h2 {
+  color: #004d4d;
+}
+
+header {
+  background-image: url("http://xeon24.com/data/wallpapers/11/540083-clouds.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 40px 20px 20px;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+main {
+  border-top: 1px solid #004d4d;
+}
+
+aside {
+  padding: 0 20px;
+}
+
+article {
+  padding: 0 40px;
+}
+
+.post {
+  border-bottom: 1px solid #00e6e6;
+  border-top: 1px solid #004d4d;
+  padding-bottom: 40px;
+}
+.post:first-of-type {
+  border-top: none;
+}
+.post:last-of-type {
+  border-bottom: none;
+}
+
+footer {
+  background-color: #004d4d;
+  padding: 40px 20px;
+}
+footer h3 {
+  margin: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
