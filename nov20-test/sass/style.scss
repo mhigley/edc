@@ -1,0 +1,134 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+
+$whitelite: hsla(0, 0%, 100%, 1);
+$white: darken($whitelite, 10);
+$whitedark: darken($whitelite, 20);
+
+$blackdark: hsla(0, 0%, 0%, 1);
+$black: lighten($blackdark, 20);
+$blacklite: lighten($blackdark, 40);
+
+$neoblack: darken(black, 20);
+
+$keylite: hsla(10, 30%, 60%, 1);
+$key: darken($keylite, 10);
+$keydark: darken($keylite, 20);
+
+$complite: complement($keylite);
+$comp: darken($complite, 10);
+$compdark: darken($complite, 20);
+
+$vertlite: invert($keylite);
+$vert: darken($vertlite, 10);
+$vertdark: darken($vertlite, 20);
+
+
+
+body {
+	font: {
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	weight: 400;
+}
+
+h1 {
+	margin: 0;
+}
+
+header {
+	background-image: linear-gradient($keylite, $key);
+	display: flex;
+	justify-content: space-between;
+	padding: 2px;
+	border: 1px solid $keydark;
+	color: $whitelite;
+	nav {
+		display: flex;
+		h1 a {padding: 10px 0;}
+		img {
+			width: 35px;
+			height: auto;
+		}
+		h1, ul, li, a {display: flex;}
+		a {
+			align-items: center;
+			padding: 10px 20px;
+		}
+	}
+	form {
+		display: flex;
+		label, span, input {display: flex;}
+		span {align-items: center;}
+	}
+	
+	.dropdown {
+		position: relative;
+		ul {
+			background-color: $key;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translate3d(-50%, 0, 0);
+			display: none;
+			border: {
+				width: 0 1px 1px 1px;
+				style: solid;
+				color: $keydark;
+			}
+
+		}
+		ul.visible {
+			display: block;
+		}
+	}
+}
+
+
+
+
+main#colors {
+	display: flex;
+	> div {
+		display: flex;
+		flex-direction: column;
+	}
+	> div div {
+		width: 50px;
+		height: 50px;
+	}
+	div:nth-child(1) {
+		div:nth-child(2){background-color: $white;}
+		div:nth-child(1){background-color: $whitelite;}
+		div:nth-child(3){background-color: $whitedark;}
+	}
+	div:nth-child(2) {
+		div:nth-child(2){background-color: $black;}
+		div:nth-child(1){background-color: $blacklite;}
+		div:nth-child(3){background-color: $blackdark;}
+	}
+	div:nth-child(3) {
+		div:nth-child(2){background-color: $key;}
+		div:nth-child(1){background-color: $keylite;}
+		div:nth-child(3){background-color: $keydark;}
+	}
+	div:nth-child(4) {
+		div:nth-child(2){background-color: $comp;}
+		div:nth-child(1){background-color: $complite;}
+		div:nth-child(3){background-color: $compdark;}
+	}
+	div:nth-child(5) {
+		div:nth-child(2){background-color: $vert;}
+		div:nth-child(1){background-color: $vertlite;}
+		div:nth-child(3){background-color: $vertdark;}
+	}
+}

@@ -1,0 +1,260 @@
+@import "variables";
+@import "reset";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,200,600,800,900);
+@import "fontawesome";
+
+/* sass goes here */
+
+$white: hsla(0, 0%, 95%, 1);
+$whitelite: lighten($white, 5);
+$whitedark: darken($white, 5);
+
+$gray: hsla(0, 0%, 75%, 1);
+$graylite: lighten($gray, 10);
+$graydark: darken($gray, 10);
+
+$black: hsla(0, 0%, 10%, 1);
+$blacklite: lighten($black, 10);
+$blackdark: darken($black, 10);
+
+
+
+body {
+	font: {
+		family: sans-serif;
+		weight: 200;
+		size: 100%;
+	}
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+h1 {font:{size: 4em;weight: 600}}
+h2 {font:{size: 3.5em;weight: 500}}
+h3 {font:{size: 3em;weight: 400}}
+h4 {font:{size: 2.5em;weight: 300}}
+h5 {font:{size: 2em;weight: 200}}
+h6 {font:{size: 1.5em;weight: 100}}
+
+#colorTest {
+	display: flex;
+	div {
+		flex: 1;
+		height: 50px;
+		background-color: $gray;
+		&:first-child{
+			background-color: $graylite;
+		}
+		&:last-child{
+			background-color: $graydark;
+		}
+	}
+}
+
+.lite-theme {
+	//Adding all colors here for lite-theme
+	$key: hsla(6, 49%, 65%, 1);
+	$keylite: lighten($key, 5);
+	$keydark: darken($key, 5);
+
+	background-color: $white;
+	color: $black;
+
+	header {
+		background-image: linear-gradient(transparentize($whitelite, .5), transparentize($whitedark, .5)), url('http://unsplash.it/1500/500/?image=778');
+		color: $blacklite;
+		#hero i.fa {
+			background-color: $whitelite;
+			border-color: $white;
+			text-shadow: 1px 1px $whitedark,
+						2px 2px $whitedark,
+						3px 3px $whitedark,
+						4px 4px $whitedark,
+						5px 5px $whitedark,
+						6px 6px $whitedark,
+						7px 7px $whitedark,
+						8px 8px $whitedark,
+						9px 9px $whitedark,
+						10px 10px $whitedark,
+						11px 11px $whitedark,
+						12px 12px $whitedark,
+						13px 13px $whitedark,
+						14px 14px $whitedark,
+						15px 15px $whitedark,
+						16px 16px $whitedark,
+						17px 17px $whitedark,
+						18px 18px $whitedark,
+						19px 19px $whitedark,
+						20px 20px $whitedark;
+		}
+		nav {
+			background-color: transparentize($whitelite, .5);
+		}
+		nav.fixed {
+			background-color: transparentize($whitelite, .05);
+		}
+		.btn-cta {
+			background-color: $key;
+			border-color: $keydark;
+			&:hover {
+				background-color: lighten($key, 5);
+				border-color: lighten($keydark, 5);
+			}
+		}
+	}
+}
+.dark-theme {
+	//Adding all colors here for lite-theme
+	$key: hsla(6, 38%, 35%, 1);
+	$keylite: lighten($key, 5);
+	$keydark: darken($key, 5);
+
+	background-color: $black;
+	color: $white;
+
+	header {
+		background-image: linear-gradient(transparentize($blackdark, .25), transparentize($blackdark, .25)), url('http://unsplash.it/1500/500/?image=715');
+		color: $whitelite;
+		#hero i.fa {
+			background-color: $blacklite;
+			border-color: $black;
+			text-shadow: 1px 1px $blackdark,
+						2px 2px $blackdark,
+						3px 3px $blackdark,
+						4px 4px $blackdark,
+						5px 5px $blackdark,
+						6px 6px $blackdark,
+						7px 7px $blackdark,
+						8px 8px $blackdark,
+						9px 9px $blackdark,
+						10px 10px $blackdark,
+						11px 11px $blackdark,
+						12px 12px $blackdark,
+						13px 13px $blackdark,
+						14px 14px $blackdark,
+						15px 15px $blackdark,
+						16px 16px $blackdark,
+						17px 17px $blackdark,
+						18px 18px $blackdark,
+						19px 19px $blackdark,
+						20px 20px $blackdark;
+		}
+		nav {
+			background-color: transparentize($blackdark, .5);
+		}
+		nav.fixed {
+			background-color: transparentize($blackdark, .05);
+		}
+		.btn-cta {
+			background-color: $key;
+			border-color: $keydark;
+			&:hover {
+				background-color: darken($key, 5);
+				border-color: darken($keydark, 5);
+			}
+		}
+	}
+}
+
+.btn {
+	color: $whitelite;
+}
+.padded {
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+header {
+	text-align: center;
+	background: {
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+		attachment: fixed;
+	}
+	#theme-toggle {
+		display: flex;
+		justify-content: flex-end;
+		i {
+			padding: 10px;
+		}
+	}
+	#hero {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 10vw;
+		padding-bottom: 10vw;
+		transition: all 250ms ease-in-out;
+		& i.fa {
+			font-size: 2em;
+			width: 65px;
+			height: 65px;
+			border-radius: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: {
+				width: 1px;
+				style: solid;
+			}
+			overflow: hidden;
+		}
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		transition: all 250ms ease-in-out;
+		ul {
+			display: inline-flex;
+			li, a {display: flex;}
+			a {padding: 10px 20px;}
+		}
+	}
+	nav.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	.btn-cta {
+		padding: 15px 30px;
+		border-radius: 5px;
+		border: {
+			width: 1px;
+			style: solid;
+		}
+		transition: all 250ms ease-in-out;
+	}
+}
+
+@media screen and (max-width: 500px){
+	h1 {font-size: 2.25em;}
+	h2 {font-size: 2em;}
+	h3 {font-size: 1.75em;}
+	h4 {font-size: 1.5em;}
+	h5 {font-size: 1.25em;}
+	h6 {font-size: 1em;}
+	header {
+		#hero {
+			padding-top: 25vw;
+			padding-bottom: 25vw;
+		}
+		nav {
+			ul {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
