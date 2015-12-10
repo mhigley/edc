@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+main {
+  overflow: hidden;
+  position: relative;
+}
+main #second,
+main #hour,
+main #minute {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10.7vw;
+  height: auto;
+  -webkit-transform: translate3d(-50%, 0, 0) rotate(0deg);
+          transform: translate3d(-50%, 0, 0) rotate(0deg);
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+}
+main img {
+  width: 100%;
+  height: auto;
+}
