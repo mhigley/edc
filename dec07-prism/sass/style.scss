@@ -1,0 +1,211 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+$white: hsla(0, 0%, 100%, 1);
+body {
+	&#lite {
+		$black: hsla(0, 0%, 30%, 1);
+		$gradlite: hsla(306, 38%, 35%, 1);
+		$graddark: hsla(244, 23%, 36%, 1);
+		$key: hsla(164, 100%, 37%, 1);
+		color: $black;
+		.btn-cta {
+			background-color: $key;
+			border-color: transparent;
+		}
+		.btn-info {
+			border-color: transparentize($black, .85);
+		}
+		.tinted {background-color: transparentize($black, .96);}
+		header {
+			color: $white;
+			background-image: url('../img/overlay.png'), linear-gradient(45deg, $graddark, $gradlite);
+			div:first-child {border-color: transparentize($white, .75);}
+			h2 {color: transparentize($white, .5);}
+			&.fixie {
+				background-image: url('../img/overlay.png'), linear-gradient(45deg, transparentize($graddark, .1), transparentize($gradlite, .1));
+			}
+		}
+		section {
+			border-color: transparentize($black, .75);
+			&#about li::before {color: $key;}
+			&#features .card {background-color: $white;border-color: transparentize($black, .75);}
+			&#features .card:last-of-type{background-color: transparent;border: none;}
+
+		}
+	}
+	&#dark {
+		$black: hsla(0, 0%, 30%, 1);
+		$gradlite: invert(hsla(306, 38%, 35%, 1));
+		$graddark: invert(hsla(244, 23%, 36%, 1));
+		$key: invert(hsla(164, 100%, 37%, 1));
+		header {
+			background-image: url('../img/overlay.png'), linear-gradient(45deg, $graddark, $gradlite);
+		}
+		.btn-cta {
+			background-color: $key;
+			border-color: transparent;
+		}
+	}
+}
+h1 {
+	font-size: 1.95em;
+}
+h2 {
+	font-size: 1.75em;
+}
+p {
+	line-height: 1.75;
+}
+
+.btn {
+	$pilledge: 50px;
+	display: inline-block;
+	font: inherit;
+	line-height: 2em;
+	padding: 5px 50px;
+	border: {
+		width: 2px;
+		style: solid;
+		color: transparentize($white, .75);
+		top-right-radius: $pilledge 100%;
+		bottom-right-radius: $pilledge 100%;
+		bottom-left-radius: $pilledge 100%;
+		top-left-radius: $pilledge 100%;
+	}
+}
+body {
+	font: {
+		family: sans-serif;
+	}
+	line-height: 1.25;
+}
+header {
+	display: flex;
+	padding: 150px 5vw 75px;
+	background: {
+		position: center;
+		size: 100px 100px, cover;
+	}
+	div {
+		flex: 1;
+		padding: 0 5vw;
+		&:first-child {
+			border: {
+				width: 0 1px 0 0;
+				style: solid;
+			}
+		}
+	}
+	h1 {
+		margin: 0;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+}
+header.fixie {
+	position: fixed;
+	top: -10em;
+	width: 100%;
+	padding: 20px 5vw;
+	box-sizing: border-box;
+	transition: all 250ms ease-in-out;
+	div {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		border: none;
+		&:last-child {
+			justify-content: flex-end;
+		}
+	}
+}
+section {
+	display: flex;
+	padding: 75px 5vw;
+	border: {
+		width: 0 0 2px 0;
+		style: solid;
+	}
+	div {
+		flex: 1;
+		padding: 0 5vw;
+		&:first-child {
+			border: {
+				width: 0 1px 0 0;
+				style: solid;
+			}
+		}
+	}
+	&#about {
+		li {
+			display: flex;
+			margin-bottom: 35px;
+		}
+		li::before {
+			margin-right: 10px;
+			content: '\f00c';
+			display:inline-block;
+			font:normal normal normal 14px/1 FontAwesome;
+			font-size:inherit;
+			text-rendering:auto;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+	}
+	&#features {
+		display: block;
+		.card {
+			padding: 0;
+			display: flex;
+			margin-bottom: 40px; 
+			border: {
+				width: 0 0 2px 0;
+				style: solid;
+			}
+			[class^='card-']{
+				flex: 1;
+				padding: 0;
+				border-width: 0;
+				div {
+					border: none;
+				}
+			}
+			img {
+				display: flex;
+				width: 100%;
+				height: auto;
+			}
+			.content {
+				padding: 20px;
+			}
+		}
+		.card:last-of-type{
+			justify-content: center;
+		}
+		> a {
+			margin: 0 auto;
+		}
+	}
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	input {
+		display: inline-block;
+		width: 50%;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+footer {
+
+}

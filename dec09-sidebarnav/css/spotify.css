@@ -1,0 +1,229 @@
+@import url(https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/**
+ * Alert Flexbox
+ */
+.alert {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.alert i.mdi {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 100%;
+  line-height: 1.4;
+  background-color: #171717;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #bfbfbf;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sidebar nav {
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+          flex: 1 0 0;
+}
+.sidebar .new-playlist {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #171717;
+  padding: 8px 16px;
+}
+.sidebar .new-playlist i {
+  position: relative;
+  margin-right: 8px;
+}
+.sidebar .new-playlist i::after {
+  position: absolute;
+  top: calc(-.15em - 1px);
+  left: calc(-.15em - 1px);
+  content: '';
+  display: block;
+  height: 1.25em;
+  width: 1.25em;
+  border: 1px solid #bfbfbf;
+  border-radius: 100%;
+}
+.sidebar .now-playing {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #171717;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sidebar .now-playing > div {
+  padding: 8px 0 8px 8px;
+}
+.sidebar .new-playlist,
+.sidebar .now-playing {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+
+.scroller {
+  overflow: auto;
+}
+
+#global {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#global main {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#global main .sidebar:first-of-type {
+  width: 250px;
+  background-color: #262626;
+}
+#global main .main {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #171717;
+}
+#global main .sidebar:last-of-type {
+  width: 250px;
+  background-color: #171717;
+}
+
+/**
+ * Alert Styles
+ */
+.alert {
+  width: 100%;
+  font-size: 85%;
+  color: #f2f2f2;
+  background-color: #457ac4;
+  font-weight: 400;
+  padding: 8px 0;
+}
+.alert i {
+  font-size: 1.25em;
+  width: 2.25em;
+}
+.alert i:last-child {
+  margin-left: auto;
+}
+.alert p {
+  margin: 0;
+}
+.alert a {
+  text-decoration: underline;
+}
+
+/**
+ * Navigation Styles
+ */
+nav {
+  font-size: 85%;
+  font-weight: 400;
+}
+nav h5 {
+  padding: 5px 16px;
+  border-width: 0 0 0 3px;
+  border-style: solid;
+  border-color: transparent;
+}
+nav li {
+  padding: 5px 16px;
+  border-width: 0 0 0 3px;
+  border-style: solid;
+  border-color: transparent;
+}
+nav li.active {
+  border-color: #57db57;
+}
+nav li.active, nav li:hover {
+  color: white;
+}
+nav i {
+  margin-right: 8px;
+}
+nav hr {
+  border: none;
+  margin: 0;
+  height: 24px;
+}
+
+header, footer {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 100%;
+  height: 50px;
+  background-color: #262626;
+}

@@ -1,0 +1,128 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+header {
+	background-color: hsla(210, 30%, 30%, 1);
+	color: white;
+	nav {
+		display: flex;
+		padding: 5px 5vw;
+		h1 {margin: 0;}
+		ul, li, a {
+			display: flex;
+			align-items: center;
+		}
+		a {padding: 0 10px;}
+		.smi {
+			margin-left: auto;
+			li {
+				a {padding: 0;}
+				a:hover i.fa{background-color: white;}
+				i.fa {
+					background-color: transparentize(white, .75);
+					color: hsla(210, 30%, 30%, 1);
+				}
+			}
+		}
+	}
+}
+main {
+	flex: 1;
+	padding: 75px 5vw;
+}
+.smi {
+	li {
+		display: inline-block;
+		margin-right: 5px;
+		&:hover i {
+			transform: scale(1.25);
+		}
+		i {
+			width: 25px;
+			height: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			color: white;
+			transition: all 250ms ease-in-out;
+		}
+		i.fa-facebook {background-color: #3b5998;}
+		i.fa-twitter {background-color: #55acee;}
+		i.fa-flickr {background-color: #0063dc;}
+		i.fa-youtube {background-color: #cd201f;}
+		i.fa-instagram {background-color: orange;}
+	}
+}
+.smi.fixed {
+	position: fixed;
+	top: 10%;
+	left: 0;
+	display: inline-flex;
+	flex-direction: column;
+	padding: 5px;
+	li {
+		display: block;
+		margin-bottom: 5px;
+	}
+	border: {
+		width: 1px 1px 1px 0;
+		color: gray;
+		style: solid;
+		radius: 0 10px 10px 0;
+	}
+	background-color: lightgray;
+}
+footer {
+	display: flex;
+	padding: 20px 5vw;
+	background-color: hsla(0, 0%, 9%, 1);
+	color: white;
+	font-size: 80%;
+	p {margin: 0;}
+	.smi {
+		margin-left: auto;
+		i.fa {background-color: transparent;}
+	}
+}
+header, footer {
+	.smi li:hover i {
+		transform: none;
+	}
+}
+
+
+.gallery {
+	ul {
+		width: (100px * 5);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		li {
+			width: 100px;
+			position: relative;
+			.preview {
+				width: 250px;
+				height: 250px;
+				position: absolute;
+				top: -50%;
+				left: 100%;
+				z-index: 100;
+			}
+		}
+		img {
+			display: flex;
+			width: 100%;
+			height: auto;
+		}
+	}
+}

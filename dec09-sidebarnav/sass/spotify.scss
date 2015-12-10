@@ -1,0 +1,186 @@
+@import "variables";
+@import "reset";
+@import "flexbox";
+@import url(https://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css);
+
+/* sass goes here */
+$white: hsla(0, 0%, 75%, 1);
+$whitelite: hsla(0, 0%, 85%, 1);
+$whiteliter: hsla(0, 0%, 95%, 1);
+$whitelitest: hsla(0, 0%, 100%, 1);
+
+
+$black: hsla(0, 0%, 9%, 1);
+$blacklite: hsla(0, 0%, 15%, 1);
+$blackdark: hsla(0, 0%, 0%, 1);
+
+$alert: hsla(215, 52%, 52%, 1);
+
+
+
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	font: {
+		family: sans-serif;
+		weight: 100;
+		size: 100%;
+	}
+	line-height: 1.4;
+	background-color: $black;
+	display: flex;
+	color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+	margin: 0;
+}
+h5 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.sidebar {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	nav {
+		flex: 1 0 0;
+	}
+	.new-playlist {
+		border-width: 1px 0 0 0;
+		border-style: solid;
+		border-color: $black; 
+		i {
+			position: relative;
+			margin-right: 8px;
+			&::after {
+				position: absolute;
+				top: calc(-.15em - 1px);
+				left: calc(-.15em - 1px);
+				content: '';
+				display: block;
+				height: 1.25em;
+				width: 1.25em;
+				border: 1px solid $white;
+				border-radius: 100%;
+			}
+		}
+		padding: 8px 16px;
+	}
+	.now-playing {
+		border-width: 1px 0 0 0;
+		border-style: solid;
+		border-color: $black;
+		display: flex;
+		> div {
+			padding: 8px 0 8px 8px;
+		}
+	}
+	.new-playlist,
+	.now-playing {
+		flex: none;
+	}
+
+}
+
+
+.scroller {
+	overflow: auto;
+}
+
+#global {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	main {
+		flex: 1;
+		display: flex;
+		.sidebar:first-of-type {
+			width: 250px;
+			background-color: $blacklite;
+		}
+		.main {
+			flex: 1;
+			background-color: $black;
+		}
+		.sidebar:last-of-type {
+			width: 250px;
+			background-color: $black;
+		}
+	}
+}
+
+
+/**
+ * Alert Styles
+ */
+.alert {
+	width: 100%;
+	font-size: 85%;
+	color: $whiteliter;
+	background-color: $alert;
+	font-weight: 400;
+	padding: 8px 0;
+	i {font-size:1.25em;width: 2.25em;}
+	i:last-child{margin-left: auto;}
+	p {margin: 0;}
+	a {text-decoration: underline;}
+}
+
+
+/**
+ * Navigation Styles
+ */
+nav {
+	font-size: 85%;
+	font-weight: 400;
+	h5 {
+		padding: 5px 16px;
+		border: {
+			width: 0 0 0 3px;
+			style: solid;
+			color: transparent;
+		}
+	}
+	li {
+		padding: 5px 16px;
+		border: {
+			width: 0 0 0 3px;
+			style: solid;
+			color: transparent;
+		}
+	}
+	li.active {
+		border-color: hsla(120, 65%, 60%, 1);
+	}
+	li.active, li:hover {
+		color: $whitelitest;
+	}
+	i {
+		margin-right: 8px;
+	}
+	hr {
+		border: none;
+		margin: 0;
+		height: 24px;
+	}
+}
+
+
+
+
+
+
+
+
+header, footer {
+	flex: none;
+	width: 100%;
+	height: 50px;
+	background-color: $blacklite;
+}

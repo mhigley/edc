@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  font-weight: 200;
+  background-color: #f2f2f2;
+}
+
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.recipeCard {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 350px;
+  margin: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.recipeCard .img {
+  width: 100%;
+  height: 125px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recipeCard .content {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px 50px 50px;
+}
+.recipeCard h1 {
+  font-weight: 400;
+}
+.recipeCard ol {
+  list-style-type: roman;
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+.recipeCard ul li {
+  display: inline-block;
+  margin-right: .5em;
+}
+.recipeCard ul li::after {
+  content: ',';
+}
+.recipeCard ul li:last-child::after {
+  content: none;
+}
