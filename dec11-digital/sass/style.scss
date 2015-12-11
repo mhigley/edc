@@ -1,0 +1,23 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+html, body {
+	height: 100%;
+	background-color: hsla(0, 0%, 9%, 1);
+}
+main {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	div {
+		width: 12vw;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
