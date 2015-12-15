@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 100%;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+#cal {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px auto 0;
+  padding: 20px;
+}
+#cal button {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+#cal .content {
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 350px;
+  margin: 0 20px;
+  border-radius: 2px;
+}
+#cal .content .month {
+  padding: 0 0 10px;
+}
+#cal .content .daysOfWeek {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#cal .content .daysOfWeek span {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  font-size: 75%;
+  opacity: .25;
+  line-height: 1.5;
+}
+#cal .content .days {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 350px;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: black;
+}
+#cal .content .days div {
+  width: 50px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-box;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: black;
+}
